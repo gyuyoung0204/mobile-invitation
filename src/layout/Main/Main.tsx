@@ -14,7 +14,7 @@ const Main = () => {
 };
 
 export default Main;
-
+ 
 const MainImg = styled.img`
   border-radius: 200px 200px 0 0;
   width: 90%;
