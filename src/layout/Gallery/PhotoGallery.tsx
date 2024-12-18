@@ -28,7 +28,9 @@ const PhotoGallery = () => {
               thumbnail={image.source}
               width={image.width}
               height={image.height}>
-              {({ ref, open }) => (
+              {/* {({ ref, open }) => ( */}
+              
+              {({ ref }) => (
                 <img
                   style={smallItemStyles}
                   alt={image.alt}

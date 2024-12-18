@@ -97,7 +97,7 @@
   "locationInfo": [
     {
       "title": "\uD83D\uDCCD 버스 이용시",
-      "desc": "\uD83D\uDC49\uD83C\uDFFB 100,152,156,212,222,223,3000,3004(롯데아파트 하차)"
+      "desc": "\uD83D\uDC49\uD83C\uDFFB 100,152,156,212,222,223,3000"
     },
     {
       "title": "\uD83D\uDCCD KTX 이용시",
@@ -105,7 +105,7 @@
     },
     {
       "title": "\uD83D\uDCCD 자가용 이용시",
-      "desc": "\uD83D\uDC49\uD83C\uDFFB 네비게이션 : 경남 창원시 성산구 중앙대로 227번길 16(용호동 5-5번지) 경남 교총 별관 3층"
+      "desc": "\uD83D\uDC49\uD83C\uDFFB 네비게이션 : 경남 창원시 성산구 중앙대로 227번길 16(용호동 5-5번지)"
     },
     {
       "title": "\uD83D\uDCCD 주차시설 안내",
