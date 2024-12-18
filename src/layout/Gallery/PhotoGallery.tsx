@@ -12,7 +12,11 @@ const PhotoGallery = () => {
   };
 
   return (
-    <Gallery>
+    <Gallery
+      options={{
+        maxZoomLevel: 1, // 확대 비율을 제한 (1 = 원래 크기)
+        zoom: false, // 확대/축소 비활성화
+      }}>
       <div
         style={{
           display: 'grid',
@@ -28,15 +32,13 @@ const PhotoGallery = () => {
               thumbnail={image.source}
               width={image.width}
               height={image.height}>
-              {/* {({ ref, open }) => ( */}
-              
-              {({ ref }) => (
+              {({ ref, open }) => (
                 <img
                   style={smallItemStyles}
                   alt={image.alt}
                   src={image.source}
                   ref={ref as React.MutableRefObject<HTMLImageElement>}
-                 // onClick={open} // 호출제거
+                  onClick={open}
                 />
               )}
             </Item>
