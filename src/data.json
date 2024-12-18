@@ -88,7 +88,7 @@
   ],
   "mapInfo": {
     "address1": "디아웨딩홀 3층",
-    "address2": "경남 창원시 성산구 중앙대로227번길 16",
+    "address2": "경남 창원시 성산구 중앙대로227번길 16( 경남교총 별관 3층)",
     "naverMap": "https://map.naver.com/p/entry/place/1704674261?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=128.6867225&lat=35.2339636",
     "kakaoMap": "https://map.kakao.com/?urlX=883866&urlY=485880&urlLevel=3&itemId=545937641&q=%EB%94%94%EC%95%84%EC%9B%A8%EB%94%A9&srcid=545937641&map_type=TYPE_MAP",
     "lat": 35.2339636,
@@ -96,12 +96,20 @@
   },
   "locationInfo": [
     {
-      "title": "\uD83D\uDCCD 지하철",
-      "desc": "\uD83D\uDC49\uD83C\uDFFB 5·6호선 공덕역 7번 출구 (도보 2분)\n\uD83D\uDC49\uD83C\uDFFB 경의·중앙선, 공항철도 공덕역 10번 출구 (도보 30초)"
+      "title": "\uD83D\uDCCD 버스 이용시",
+      "desc": "\uD83D\uDC49\uD83C\uDFFB 100,152,156,212,222,223,3000,3004(롯데아파트 하차)"
     },
     {
-      "title": "\uD83D\uDCCD 주차안내",
-      "desc": "\uD83D\uDC49\uD83C\uDFFB 건물 내 3-5층 2시간 무료주차\n(안내데스크에서 주차권 수령)"
+      "title": "\uD83D\uDCCD KTX 이용시",
+      "desc": "\uD83D\uDC49\uD83C\uDFFB 창원 중앙역에서 하차"
+    },
+    {
+      "title": "\uD83D\uDCCD 자가용 이용시",
+      "desc": "\uD83D\uDC49\uD83C\uDFFB 네비게이션 : 경남 창원시 성산구 중앙대로 227번길 16(용호동 5-5번지) 경남 교총 별관 3층"
+    },
+    {
+      "title": "\uD83D\uDCCD 주차시설 안내",
+      "desc": "\uD83D\uDC49\uD83C\uDFFB 교총건물 자체 주차장과 경남도교육청 및 근처 관공서 무료주차 가능"
     }
   ],
   "emojis": [
