@@ -4,7 +4,8 @@ import images from '@/layout/Gallery/Images.ts';
 
 const PhotoGallery = () => {
   const smallItemStyles: React.CSSProperties = {
-    cursor: 'pointer',
+    // cursor: 'pointer',
+    cursor: 'default',
     objectFit: 'contain',
     width: '100px',
     height: '150px',
@@ -33,7 +34,7 @@ const PhotoGallery = () => {
                   alt={image.alt}
                   src={image.source}
                   ref={ref as React.MutableRefObject<HTMLImageElement>}
-                  onClick={open}
+                 // onClick={open} // 호출제거
                 />
               )}
             </Item>
