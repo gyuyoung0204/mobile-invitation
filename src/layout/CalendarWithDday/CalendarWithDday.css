@@ -54,3 +54,22 @@
     font-weight: bold;
   }
   
+  @media (max-width: 480px) {
+    .calendar-container {
+      padding: 10px; /* 모바일에서는 패딩 줄이기 */
+    }
+  
+    .calendar-day {
+      width: 30px; /* 모바일에서 더 작은 크기 */
+      height: 30px;
+      font-size: 12px;
+    }
+  
+    .calendar-title {
+      font-size: 18px; /* 제목 크기 줄이기 */
+    }
+  
+    .dday-message {
+      font-size: 14px; /* D-day 메시지 크기 줄이기 */
+    }
+  }
