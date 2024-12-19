@@ -10,8 +10,8 @@ interface Defaults {
 
 const defaults: Defaults = {
   speed: 5,
-  maxSize: 30,
-  minSize: 20,
+  maxSize: 20,
+  minSize: 15,
   newOn: 400,
 };
 
