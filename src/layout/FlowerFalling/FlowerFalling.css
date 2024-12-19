@@ -12,10 +12,21 @@
   .petal {
     position: absolute;
     top: -10%;
-    background: radial-gradient(circle, #ffe4e1 0%, #ffb6c1 60%, rgba(255,182,193,0.3) 100%);
+    background: radial-gradient(circle, #ffe4e1 0%, #ffb6c1 60%, rgba(255, 182, 193, 0.3) 100%);
+    clip-path: polygon(
+      50% 0%,
+      60% 30%,
+      100% 30%,
+      70% 50%,
+      80% 80%,
+      50% 60%,
+      20% 80%,
+      30% 50%,
+      0% 30%,
+      40% 30%
+    ); /* 벚꽃잎 모양 */
     border-radius: 50%;
     animation: fall linear forwards, sway ease-in-out infinite;
-    opacity: 0.8;
   }
   
   @keyframes fall {
@@ -37,5 +48,4 @@
       transform: translateX(20px);
     }
   }
-  
   
