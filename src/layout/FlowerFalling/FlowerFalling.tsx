@@ -91,6 +91,8 @@ const FlowerFalling = () => {
 
     petalLoop();
 
+
+    
     return () => {
       window.removeEventListener('resize', handleResize);
     };

@@ -11,6 +11,8 @@ import Invitation from '@/layout/Invitation/Invitation.tsx';
 import Location from '@/layout/Location/Location.tsx';
 import Main from '@/layout/Main/Main.tsx';
 import FlowerFalling from '@/layout/FlowerFalling/FlowerFalling.tsx';
+// import MusicPlayer from '@/layout/MusicPlayer/MusicPlayer.tsx';
+import CalendarWithDday from '@/layout/CalendarWithDday/CalendarWithDday.tsx';
 
 function App() {
   const ncpClientId = import.meta.env.VITE_APP_NAVERMAPS_CLIENT_ID;
@@ -51,6 +53,10 @@ function App() {
         <Wrapper ref={galleryRef}>
           <Heading1>Gallery</Heading1>
           <GalleryWrap />
+        </Wrapper>
+        <Wrapper>
+          <Heading1>안내</Heading1>
+      <CalendarWithDday />
         </Wrapper>
         <Wrapper>
           <Heading1>마음 전하실 곳</Heading1>
