@@ -5,7 +5,7 @@ import RoundButton from '@/components/RoundButton.tsx';
 import { Caption, Paragraph } from '@/components/Text.tsx';
 
 const Invitation = () => {
-  const { meeting } = data;
+  const { greeting,meeting } = data;
 
     // 구글 캘린더 URL 생성
     const googleCalendarURL = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
@@ -16,7 +16,7 @@ const Invitation = () => {
   
   return (
     <InvitationWrapper>
-      <Paragraph>{meeting.message}</Paragraph>
+      <Paragraph>{greeting.message}</Paragraph>
       <Host />
       <Caption textAlign={'center'}>{meeting.eventDetail}</Caption>
       <RoundButton
