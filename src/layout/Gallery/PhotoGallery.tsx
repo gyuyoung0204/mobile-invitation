@@ -14,22 +14,20 @@ const PhotoGallery = () => {
     <Gallery
       options={{
         zoom: false, // 확대 버튼 비활성화
-        maxZoomLevel: 1, // 최대 확대 비율을 원래 크기로 제한
+        maxZoomLevel: 1, // 최대 확대 비율 제한
         wheelToZoom: false, // 마우스 휠 확대 비활성화
+        clickToCloseNonZoomable: true, // 줌 불가능한 이미지 클릭 시 닫기
       }}
       onBeforeOpen={(pswpInstance) => {
         // 줌 동작 비활성화
-        pswpInstance.on('afterInit', () => {
-          pswpInstance.currZoomLevel = 1; // 초기 줌 레벨 고정
-          pswpInstance.zoomTo = () => {}; // 줌 기능 비활성화
+        pswpInstance.on('uiRegister', () => {
+          pswpInstance.options.maxZoomLevel = 1; // 줌 비율 제한
         });
 
-        // 핀치 줌 비활성화
-        pswpInstance.on('pointerDown', (e) => {
-          if (e.pointerType === 'touch') {
-            e.preventDefault(); // 터치 제스처 무효화
-          }
-        });
+    
+
+        // 줌 메서드 오버라이드
+        pswpInstance.zoomTo = () => {}; // 줌 메서드를 비활성화
       }}>
       <div
         style={{
