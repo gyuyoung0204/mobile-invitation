@@ -15,4 +15,5 @@ const firebaseConfig = {
   
 
 export const firebaseApp = initializeApp(firebaseConfig);
+
 export const realtimeDb = getDatabase(firebaseApp);
