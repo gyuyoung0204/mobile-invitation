@@ -28,7 +28,7 @@ const MainImgWrapper = styled.div`
   position: relative;
   width: 90%;
   max-width: 450px;
-  border-radius: 200px 200px 0 0; /* 상단 둥근 모서리 */
+  border-radius: 0; /* 둥근 모서리 제거 */
   overflow: hidden; /* 둥근 모서리를 유지하며 내부 콘텐츠를 자름 */
   height: auto; /* 높이를 이미지 크기에 맞춤 */
 `;
