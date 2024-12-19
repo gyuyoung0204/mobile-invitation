@@ -26,8 +26,8 @@ const Wrapper = styled.div`
 
 const MainImgWrapper = styled.div`
   position: relative;
-  width: 90%;
-  max-width: 450px;
+  width: 100%; /* 기존 90%에서 95%로 확대 */
+  max-width: 800px; /* 기존 450px에서 600px로 확대 *
   border-radius: 0; /* 둥근 모서리 제거 */
   overflow: hidden; /* 둥근 모서리를 유지하며 내부 콘텐츠를 자름 */
   height: auto; /* 높이를 이미지 크기에 맞춤 */
