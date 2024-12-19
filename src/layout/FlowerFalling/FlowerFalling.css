@@ -1,51 +1,53 @@
 .cherry_blossom {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 1000;
-}
-
-.petal {
-  position: absolute;
-  top: -10%;
-  background-size: 100% 100%; /* 배경 이미지 크기를 요소 크기에 맞춤 */
-  background-repeat: no-repeat;
-  width: 200px; /* 꽃잎 크기를 500px로 설정 */
-  height: 200px; /* 꽃잎 크기를 500px로 설정 */
-  animation: fall linear infinite, sway 3s ease-in-out infinite;
-  opacity: 0.9;
-}
-
-/* 노란색 꽃 */
-.petal.yellow {
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Cpath d="M100 0 C120 20, 140 40, 150 70 C160 100, 130 140, 100 150 C70 140, 40 100, 50 70 C60 40, 80 20, 100 0 Z" fill="%23FFD700"/%3E%3C/svg%3E');
-}
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  
+  .petal {
+    position: absolute;
+    top: -10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px; /* 기존 30px에서 50px로 확대 */
+    height: 50px; /* 기존 30px에서 50px로 확대 */
+    animation: fall linear infinite, sway 3s ease-in-out infinite;
+    opacity: 0.9;
+  }
+  
+  /* 노란색 꽃 */
+  .petal.yellow {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Cpath d="M100 0 C120 20, 140 40, 150 70 C160 100, 130 140, 100 150 C70 140, 40 100, 50 70 C60 40, 80 20, 100 0 Z" fill="%23FFFFE0"/%3E%3C/svg%3E');
+  }
+  
+  
 /* 더 밝은 초록색 꽃 */
 .petal.green {
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Cpath d="M100 0 C120 20, 140 40, 150 70 C160 100, 130 140, 100 150 C70 140, 40 100, 50 70 C60 40, 80 20, 100 0 Z" fill="%230A8F1E"/%3E%3C/svg%3E');
-}
-
-@keyframes fall {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Cpath d="M100 0 C120 20, 140 40, 150 70 C160 100, 130 140, 100 150 C70 140, 40 100, 50 70 C60 40, 80 20, 100 0 Z" fill="%230A8F1E"/%3E%3C/svg%3E');
   }
-  100% {
-    transform: translateY(110vh) rotate(360deg);
-    opacity: 0; 
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(110vh) rotate(360deg);
+      opacity: 0; 
+    }
   }
-}
-
-@keyframes sway {
-  0%, 100% {
-    transform: translateX(0);
+  
+  @keyframes sway {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px);
+    }
   }
-  50% {
-    transform: translateX(20px);
-  }
-}
+  
