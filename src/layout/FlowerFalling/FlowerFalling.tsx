@@ -56,6 +56,8 @@ const FlowerFalling = () => {
       petal.style.left = `${startPosLeft}px`;
       petal.style.position = 'absolute';
       petal.style.animation = `fall ${fallTime}s linear`;
+      petal.style.setProperty('--random-delay', `${Math.random() * 5}`);
+
 
       petal.addEventListener('animationend', () => {
         petal.remove();
