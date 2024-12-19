@@ -23,6 +23,10 @@ const FlowerFalling = () => {
     let wrapH = $wrap.offsetHeight;
     let wrapW = $wrap.offsetWidth;
 
+    const generateRandomColor = () => {
+      return Math.random() > 0.5 ? 'yellow' : 'green';
+    };
+
     const getRandomRotate = (): string => {
       const rotateX = 360;
       const rotateY = Math.random() * 60 - 30;
@@ -45,7 +49,7 @@ const FlowerFalling = () => {
 
     const petalGen = () => {
       const petal = document.createElement('span');
-      petal.classList.add('petal');
+      petal.classList.add('petal',generateRandomColor() );
       const size = Math.floor(Math.random() * (defaults.maxSize - defaults.minSize + 1)) + defaults.minSize;
       const startPosLeft = Math.random() * wrapW;
       const fallTime = (wrapH * 0.1 + Math.random() * 5) / defaults.speed;
