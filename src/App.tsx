@@ -10,34 +10,36 @@ import Guestbook from '@/layout/Guestbook/Guestbook.tsx';
 import Invitation from '@/layout/Invitation/Invitation.tsx';
 import Location from '@/layout/Location/Location.tsx';
 import Main from '@/layout/Main/Main.tsx';
+import FlowerFalling from '@/layout/FlowerFalling/FlowerFalling.tsx';
 
 function App() {
   const ncpClientId = import.meta.env.VITE_APP_NAVERMAPS_CLIENT_ID;
   const [isVisible, setIsVisible] = useState(false);
-  const galleryRef = useRef(null);
-  console.log(ncpClientId);
+  const galleryRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
+    const checkScrollPosition = () => {
+      if (galleryRef.current) {
+        const { offsetTop } = galleryRef.current;
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition >= offsetTop) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      }
+    };
+
     window.addEventListener('scroll', checkScrollPosition);
     return () => {
       window.removeEventListener('scroll', checkScrollPosition);
     };
   }, []);
 
-  const checkScrollPosition = () => {
-    if (galleryRef.current) {
-      const { offsetTop } = galleryRef.current;
-      const scrollPosition = window.scrollY;
-
-      if (scrollPosition >= offsetTop) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    }
-  };
-
   return (
     <NavermapsProvider ncpClientId={ncpClientId}>
+      <FlowerFalling />
       <Container>
         <Wrapper>
           <Main />

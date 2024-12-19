@@ -18,6 +18,7 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
    // TODO: realtime db 에 likes 객체 추가.  
   useEffect(() => {
     const dbRef = ref(realtimeDb, 'likes');
+    console.log(dbRef);
     onValue(dbRef, (snapshot) => {
       setCount(Number(snapshot.val()));
     });
