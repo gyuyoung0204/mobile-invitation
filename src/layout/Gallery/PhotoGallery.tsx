@@ -4,8 +4,7 @@ import images from '@/layout/Gallery/Images.ts';
 
 const PhotoGallery = () => {
   const smallItemStyles: React.CSSProperties = {
-    // cursor: 'pointer',
-    cursor: 'default',
+    cursor: 'pointer',
     objectFit: 'contain',
     width: '100px',
     height: '150px',
@@ -14,13 +13,16 @@ const PhotoGallery = () => {
   return (
     <Gallery
       options={{
-        maxZoomLevel: 1, // 확대 비율을 제한 (1 = 원래 크기)
-        zoom: false, // 확대/축소 비활성화
+        zoom: false, // 줌 비활성화
+        maxZoomLevel: 1, // 최대 확대 비율 1로 제한
+        wheelToZoom: false, // 마우스 휠 확대/축소 비활성화
+        pinchToClose: false, // 핀치 제스처로 닫기 비활성화
+        closeOnVerticalDrag: true, // 세로 드래그로 닫기 활성화
       }}>
       <div
         style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(3, 0fr)',
+          gridTemplateColumns: 'repeat(3, 1fr)', // 1:1 비율로 그리드 구성
           gridGap: 2,
         }}>
         {images.map((image, index) => {

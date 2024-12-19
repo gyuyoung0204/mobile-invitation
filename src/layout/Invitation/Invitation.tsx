@@ -5,16 +5,23 @@ import RoundButton from '@/components/RoundButton.tsx';
 import { Caption, Paragraph } from '@/components/Text.tsx';
 
 const Invitation = () => {
-  const { greeting } = data;
+  const { meeting } = data;
+
+    // 구글 캘린더 URL 생성
+    const googleCalendarURL = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
+      meeting.eventTitle
+    )}&dates=${meeting.startTime}/${meeting.endTime}&details=${encodeURIComponent(
+      meeting.eventDescription
+    )}&location=${encodeURIComponent(meeting.eventLocation)}`;
+  
   return (
     <InvitationWrapper>
-      <Paragraph>{greeting.message}</Paragraph>
+      <Paragraph>{meeting.message}</Paragraph>
       <Host />
-      <Caption textAlign={'center'}>{greeting.eventDetail}</Caption>
-      {/* TODO: 구글캘린더 추가하기 기능을 넣는다면 링크 수정 */}
+      <Caption textAlign={'center'}>{meeting.eventDetail}</Caption>
       <RoundButton
         target="_blank"
-        href=""
+        href={googleCalendarURL}
         rel="noreferrer">
         구글 캘린더 추가하기
       </RoundButton>

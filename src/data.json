@@ -112,6 +112,16 @@
       "desc": "\uD83D\uDC49\uD83C\uDFFB 교총건물 자체 주차장과 경남도교육청 및 근처 관공서 무료주차 가능"
     }
   ],
+  
+  "meeting": {
+    "message": "안녕하세요! 결혼식에 초대합니다.",
+    "eventDetail": "2025년 4월 12일 오후 12시20분",
+    "eventTitle": "결혼식 초대",
+    "startTime": "20250412T050000Z", 
+    "endTime": "20250412T070000Z",
+    "eventDescription": "우리 결혼식에 초대합니다! 함께 축하해 주세요.",
+    "eventLocation": "경남 창원시 디아웨딩홀 3층"
+  },
   "emojis": [
     "❤️",
     "💛",
