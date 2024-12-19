@@ -9,9 +9,9 @@ interface Defaults {
 }
 
 const defaults: Defaults = {
-  speed: 5,
-  maxSize: 20,
-  minSize: 15,
+  speed: 3,
+  maxSize: 15,
+  minSize: 10,
   newOn: 400,
 };
 
@@ -24,7 +24,7 @@ const FlowerFalling = () => {
     let wrapW = $wrap.offsetWidth;
 
     const generateRandomColor = () => {
-      return Math.random() > 0.5 ? 'yellow' : 'green';
+      return Math.random() > 0.5 ? 'yellow' : 'pink';
     };
 
     const getRandomRotate = (): string => {
