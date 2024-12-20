@@ -26,17 +26,25 @@ const Wrapper = styled.div`
 
 const MainImgWrapper = styled.div`
   position: relative;
-  width: 127%; /* 부모 컨테이너의 너비를 가득 채움 */
-  height: 100%; /* 부모 컨테이너의 높이를 가득 채움 */
-  border-radius: 0; /* 둥근 모서리 제거 */
-  overflow: hidden; /* 넘치는 콘텐츠 숨김 */
-`;
+  width: 127%; /* 기본값 */
+  height: 100%;
+  border-radius: 0;
+  overflow: hidden;
 
+  @media (max-width: 768px) {
+    width: 100%; /* 모바일에서는 부모 컨테이너에 가득 채움 */
+    height: auto; /* 높이는 이미지 비율에 따라 조정 */
+  }
+`;
 
 const MainImg = styled.img`
   width: 100%;
   display: block;
-  object-fit: cover; /* 이미지 크기를 컨테이너에 맞춤 */
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    height: auto; /* 모바일에서는 이미지가 비율대로 보이도록 조정 */
+  }
 `;
 
 const FadeOutGradient = styled.div`
