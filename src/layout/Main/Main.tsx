@@ -26,7 +26,7 @@ const Wrapper = styled.div`
 
 const MainImgWrapper = styled.div`
   position: relative;
-  width: 127%; /* 기본값 */
+  width: 127.2%; /* 기본값 */
   height: 100%;
   border-radius: 0;
   overflow: hidden;
@@ -43,7 +43,7 @@ const MainImg = styled.img`
   object-fit: cover;
 
   @media (max-width: 768px) {
-    height: auto; /* 모바일에서는 이미지가 비율대로 보이도록 조정 */
+    height: 100vh; /* 모바일에서도 화면 높이에 맞춤 */
   }
 `;
 
