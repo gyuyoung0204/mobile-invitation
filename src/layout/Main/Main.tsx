@@ -26,11 +26,12 @@ const Wrapper = styled.div`
 
 const MainImgWrapper = styled.div`
   position: relative;
-  width: 126%; /* 기존 90%에서 95%로 확대 */
+  width: 127%; /* 부모 컨테이너의 너비를 가득 채움 */
+  height: 100%; /* 부모 컨테이너의 높이를 가득 채움 */
   border-radius: 0; /* 둥근 모서리 제거 */
-  overflow: hidden; /* 둥근 모서리를 유지하며 내부 콘텐츠를 자름 */
-  height: auto; /* 높이를 이미지 크기에 맞춤 */
+  overflow: hidden; /* 넘치는 콘텐츠 숨김 */
 `;
+
 
 const MainImg = styled.img`
   width: 100%;
