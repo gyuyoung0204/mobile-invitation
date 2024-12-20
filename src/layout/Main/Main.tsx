@@ -43,7 +43,7 @@ const MainImg = styled.img`
   object-fit: cover;
 
   @media (max-width: 768px) {
-    height: 100vh; /* 모바일에서도 화면 높이에 맞춤 */
+    height: auto; /* 모바일에서는 이미지가 비율대로 보이도록 조정 */
   }
 `;
 
