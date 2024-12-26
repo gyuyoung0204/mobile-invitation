@@ -32,9 +32,8 @@ const MainImgWrapper = styled.div`
   overflow: hidden;
 
   @media (max-width: 768px) {
-    width: 120%; /* 모바일에서 이미지가 더 커지도록 조정 */
-    height: auto; /* 높이는 이미지 비율에 따라 조정 */
-    margin-left: -10%; /* 화면 중앙 정렬을 위해 마진 조정 */
+    width: 100vw; /* 모바일에서 너비는 뷰포트 가득 */
+    height: 100vh; /* 높이도 뷰포트 가득 */
   }
 `;
 
