@@ -42,7 +42,7 @@ const MainImg = styled.img`
   display: block;
   object-fit: cover;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     height: auto; /* 모바일에서는 이미지가 비율대로 보이도록 조정 */
   }
 `;
