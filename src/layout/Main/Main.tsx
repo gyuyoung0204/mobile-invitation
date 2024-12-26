@@ -32,8 +32,9 @@ const MainImgWrapper = styled.div`
   overflow: hidden;
 
   @media (max-width: 768px) {
-    width: 100%; /* 모바일에서는 부모 컨테이너에 가득 채움 */
+    width: 120%; /* 모바일에서 이미지가 더 커지도록 조정 */
     height: auto; /* 높이는 이미지 비율에 따라 조정 */
+    margin-left: -10%; /* 화면 중앙 정렬을 위해 마진 조정 */
   }
 `;
 
@@ -42,8 +43,9 @@ const MainImg = styled.img`
   display: block;
   object-fit: cover;
 
-  @media (max-width: 1000px) {
-    height: auto; /* 모바일에서는 이미지가 비율대로 보이도록 조정 */
+  @media (max-width: 768px) {
+    height: auto; /* 이미지 비율 유지 */
+    transform: scale(1.2); /* 이미지를 1.2배 확대 */
   }
 `;
 
