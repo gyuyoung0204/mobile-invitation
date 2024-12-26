@@ -31,15 +31,24 @@ const ContentsWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw; /* 모바일 화면에서 가득 채우기 */
+  padding: 0 10px; /* 모바일 화면에서 좌우 여백 추가 */
+
+  @media (min-width: 600px) {
+    max-width: 1200px; /* 데스크톱 화면에서는 최대 너비 제한 */
+    margin: 30px auto;
+  }
 `;
 
 const ImageMoreWrap = styled.div<{ isMoreView: boolean }>`
   position: relative;
-  max-height: ${(props) =>
-    props.isMoreView
-      ? ''
-      : '60vh'}; /* isMoreView 상태가 true일 때는 높이 제한 없이, false일 때는 195px로 작게 보이도록 */
+  width: 100%; /* 갤러리가 화면 가득 차도록 */
+  max-height: ${(props) => (props.isMoreView ? '' : '60vh')};
   overflow: hidden;
+
+  @media (min-width: 600px) {
+    max-width: 1000px; /* 데스크톱 화면에서 너비 제한 */
+  }
 `;
 
 const WhiteGradientOverlay = styled.div`
@@ -63,4 +72,9 @@ const PlusButton = styled.div`
   border-radius: 4px;
   border: 1px solid #dfdfdf;
   cursor: pointer;
+  text-align: center;
+
+  @media (min-width: 600px) {
+    max-width: 300px; /* 데스크톱 화면에서 버튼 너비 제한 */
+  }
 `;
