@@ -21,9 +21,10 @@ const Location = () => {
 export default Location;
 
 const LocationWrapper = styled.div`
-  width: 100%; /* 모바일 화면에서 가득 채우기 */
-  max-width: 1200px; /* 데스크톱 화면에서 최대 너비 제한 */
-  margin: 20 auto; /* 가운데 정렬 */
+  width: 100vw; /* 화면 너비를 가득 채움 */
+  height: 100vh; /* 화면 높이를 가득 채움 */
+  max-width: 100%; /* 데스크톱에서 최대 너비 제한 제거 */
+  margin: 0 auto; /* 가운데 정렬 */
   display: flex;
   flex-direction: column;
   padding: 20px; /* 내부 여백 추가 */
