@@ -28,8 +28,12 @@
   
   
 /* 연한 분홍색 꽃 */
-.petal.pink {
+/* .petal.pink {
   background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Cpath d="M100 0 C120 20, 140 40, 150 70 C160 100, 130 140, 100 150 C70 140, 40 100, 50 70 C60 40, 80 20, 100 0 Z" fill="%23FFB6C1"/%3E%3C/svg%3E');
+} */
+/* 연한 보라색 꽃 */
+.petal.pink {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Cpath d="M100 0 C120 20, 140 40, 150 70 C160 100, 130 140, 100 150 C70 140, 40 100, 50 70 C60 40, 80 20, 100 0 Z" fill="%23DDA0DD"/%3E%3C/svg%3E');
 }
   @keyframes fall {
     0% {
