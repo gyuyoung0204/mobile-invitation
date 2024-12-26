@@ -9,6 +9,7 @@ const Container = styled.div`
   width: 85vw;
   margin: 0 auto;
   
+  position: relative; /* 그라데이션을 올리기 위해 필요 */
   @media screen and (min-width: 500px) {
       width: 500px;
   }
