@@ -1,0 +1,56 @@
+.location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* 콘텐츠 사이 간격 균등 분배 */
+    padding: 20px;
+    background-color: #ffffff;
+    width: 100vw; /* 화면 너비 가득 */
+    height: 100vh; /* 화면 높이 가득 */
+    box-sizing: border-box; /* 패딩 포함 계산 */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Apple SD Gothic Neo', 'Nanum Gothic', sans-serif;
+  }
+  
+  .location-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .location-caption {
+    font-size: 16px;
+    color: #777;
+    text-align: center;
+  }
+  
+  .map-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* 맵이 너비를 가득 채움 */
+    max-width: 600px; /* 데스크톱에서 최대 너비 제한 */
+    flex-grow: 1; /* 남는 공간을 차지하여 높이 조정 */
+  }
+  
+  @media (max-width: 600px) {
+    .location-container {
+      padding: 10px; /* 모바일 화면에서 패딩 줄이기 */
+    }
+  
+    .location-title {
+      font-size: 18px; /* 모바일에서 폰트 크기 조정 */
+    }
+  
+    .location-caption {
+      font-size: 14px; /* 모바일에서 폰트 크기 줄이기 */
+    }
+  
+    .map-container {
+      max-width: 100%; /* 모바일에서는 화면에 가득 차도록 */
+    }
+  }
+  
