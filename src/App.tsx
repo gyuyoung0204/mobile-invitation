@@ -71,8 +71,9 @@ function App() {
         </Wrapper>
         <Wrapper>
           <CustomHeading1>신랑 신부에게</CustomHeading1>
-          <Guestbook />
-          
+          <Guestbook /> 
+            </Wrapper>
+          <Wrapper>
          <CustomHeading2>Copyright 2024. GYUDONG. all rights reserved.</CustomHeading2>
         </Wrapper>
         
