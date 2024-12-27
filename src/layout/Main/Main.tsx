@@ -57,9 +57,10 @@ const FadeOutGradient = styled.div`
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
   pointer-events: none; /* 그라데이션이 클릭되지 않도록 설정 */
 
+  /* 모바일에서 그라데이션 수정 */
   @media (max-width: 768px) {
+    height: 40%; /* 모바일에서 높이 증가 */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-    height: 40%; /* 모바일에서는 그라데이션 높이를 조금 더 증가 */
   }
 `;
 
