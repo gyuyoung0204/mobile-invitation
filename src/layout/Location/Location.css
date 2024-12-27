@@ -26,7 +26,7 @@
   
   @media (max-width: 768px) {
     .location-container {
-      width: 100vw; /* 모바일 화면 가득 채우기 */
+      width: 80vw; /* 모바일 화면 가득 채우기 */
       padding: 10px; /* 내부 여백 추가 */
     }
   
