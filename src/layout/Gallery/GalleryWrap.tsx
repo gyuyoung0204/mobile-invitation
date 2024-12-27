@@ -45,7 +45,7 @@ const ImageMoreWrap = styled.div<{ isMoreView: boolean }>`
 
   @media (max-width: 768px) {
     max-height: ${(props) =>
-      props.isMoreView ? '100%' : '80vh'}; /* 모바일에서 높이를 더 늘림 */
+      props.isMoreView ? '100%' : '60vh'}; /* 모바일에서 높이를 더 늘림 */
     margin: 0; /* 모바일에서도 공백 제거 */
   }
 `;
