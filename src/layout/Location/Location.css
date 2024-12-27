@@ -3,18 +3,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1200px; /* 데스크톱 최대 너비 제한 */
+    width: 100%; /* 부모 컨테이너의 너비를 가득 채움 */
+    max-width: 1200px; /* 데스크톱에서 최대 너비 제한 */
     height: 100%; /* 부모 컨테이너가 페이지를 가득 채움 */
     margin: 0 auto; /* 가운데 정렬 */
     padding: 20px;
     box-sizing: border-box; /* 패딩 포함 계산 */
     background-color: #ffffff;
     font-family: 'Apple SD Gothic Neo', 'Nanum Gothic', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   .location-title {
-    font-size: 24px;
+    font-size: 20px; /* 기본 제목 폰트 크기 */
     font-weight: bold;
     margin-bottom: 10px;
     color: #333;
@@ -30,12 +32,12 @@
   
   .map-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%; /* 맵이 너비를 가득 채움 */
-    max-width: 800px; /* 데스크톱에서 최대 너비 제한 */
-    height: auto;
+    max-width: 600px; /* 데스크톱에서 최대 너비 제한 */
+    height: auto; /* 높이 자동 조정 */
+    margin-bottom: 20px;
   }
   
   .map-buttons {
@@ -53,27 +55,33 @@
     font-size: 14px;
   }
   
-  @media (max-width: 768px) {
+  /* 반응형 스타일 */
+  @media (max-width: 600px) {
     .location-container {
-      padding: 15px;
-      height: 100%; /* 모바일 화면에도 부모 높이 채우기 */
+      padding: 10px;
+      max-width: 100%; /* 모바일에서는 화면 너비 가득 채우기 */
+      height: 100vh; /* 모바일에서 화면 전체 높이 채우기 */
     }
   
     .location-title {
-      font-size: 20px;
+      font-size: 18px; /* 모바일에서 폰트 크기 조정 */
     }
   
     .location-caption {
       font-size: 14px;
+      margin-bottom: 15px;
     }
   
     .map-container {
       max-width: 100%; /* 모바일에서는 너비 제한 없이 꽉 차도록 */
+      height: 50%; /* 모바일에서 맵 크기를 조정 */
     }
   
     .map-buttons {
-      flex-direction: column; /* 모바일에서는 버튼 세로 배치 */
+      flex-direction: column; /* 모바일에서는 버튼을 세로로 정렬 */
       gap: 5px;
     }
-  }
+  
+    .location-additional {
+      font-size: 12px; /* 모바일에서 폰트 크기
   
