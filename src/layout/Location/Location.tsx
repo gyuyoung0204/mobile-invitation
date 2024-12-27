@@ -23,9 +23,10 @@ const Location = () => {
       <div className="map-buttons">
         <MapButtons />
       </div>
-
+      <div className="location-additional">
       {/* 주소 */}
       <Address />
+    </div>
     </div>
   );
 };
