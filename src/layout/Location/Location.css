@@ -26,8 +26,8 @@
   
   @media (max-width: 768px) {
     .location-container {
-      width: 80vw; /* 모바일 화면 가득 채우기 */
-      padding: 10px; /* 내부 여백 추가 */
+      width: 60vw; /* 모바일 화면 가득 채우기 */
+      padding: 0px; /* 내부 여백 추가 */
     }
   
     .map-container {
