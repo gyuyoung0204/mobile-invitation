@@ -28,7 +28,7 @@ const LocationWrapper = styled.div`
   flex-direction: column;
   padding: 20px; /* 내부 여백 추가 */
 
-  @media (max-width: 600px) {
+  @media (max-width: 1200px) {
     padding: 10px; /* 모바일 화면에서 패딩 줄이기 */
     max-width: 100%; /* 모바일에서 너비 제한 없이 화면 가득 채우기 */
   }
