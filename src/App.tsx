@@ -53,14 +53,14 @@ function App() {
           <CustomHeading1>모시는 글</CustomHeading1>
           <Invitation />
         </Wrapper>
-        <Wrapper ref={galleryRef}>
-          <CustomHeading1>Gallery</CustomHeading1>
-          <GalleryWrap />
-        </Wrapper>
         <Wrapper>
           <CustomHeading1>안내</CustomHeading1>
           <CalendarWithDday />
         </Wrapper>
+        <Wrapper ref={galleryRef}>
+          <CustomHeading1>Gallery</CustomHeading1>
+          <GalleryWrap />
+        </Wrapper>       
         <Wrapper>
           <CustomHeading1>마음 전하실 곳</CustomHeading1>
           <Account />
