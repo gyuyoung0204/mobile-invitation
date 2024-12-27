@@ -1,22 +1,24 @@
-
 import './Location.css';
 import data from 'data.json';
 import Address from './Address.tsx';
 import Map from './Map.tsx';
 import MapButtons from './MapButtons.tsx';
+import { Caption, PointTitle } from '@/components/Text.tsx';
 
 const Location = () => {
   const { mapInfo } = data;
-  return (  
+
+  return (
     <div className="location-container">
-      <p className="location-caption">{mapInfo.address2}</p>
+      <PointTitle>{mapInfo.address1}</PointTitle>
+      <Caption textAlign={'center'}>{mapInfo.address2}</Caption>
       <div className="map-container">
-        <Map /> 
-      </div> 
-      <div className="map-buttons">
-        <MapButtons />
+        <Map />
       </div>
-      <div className="location-address">
+        
+      <MapButtons />
+        <div className="location-container">
+        
         <Address />
       </div>
     </div>
