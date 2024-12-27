@@ -79,6 +79,7 @@ const SubTitle = styled.p`
   font-family: 'Times New Roman', serif; /* 동일한 폰트 */
   font-size: 1.1rem;
   color: #2F2120; /* 기존 색상 유지 */
+  font-weight: bold; /* 텍스트를 굵게 강조 */
   line-height: 140%;
   white-space: pre-line;
 `;
