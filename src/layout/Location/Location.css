@@ -23,13 +23,8 @@
   
   @media (max-width: 768px) {
     .location-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        background-color: transparent; /* 컨테이너 배경색 제거 */
-        font-family: 'Times New Roman', serif; /* 폰트 변경 */
+     
+    padding: 10px; /* 모바일에서 여백 최소화 */
     }
   
     .map-container {
