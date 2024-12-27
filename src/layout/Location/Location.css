@@ -2,28 +2,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* 콘텐츠 사이 간격 균등 분배 */
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* 데스크톱 최대 너비 제한 */
+    height: 100%; /* 부모 컨테이너가 페이지를 가득 채움 */
+    margin: 0 auto; /* 가운데 정렬 */
     padding: 20px;
-    background-color: #ffffff;
-    width: 100vw; /* 화면 너비 가득 */
-    height: 100vh; /* 화면 높이 가득 */
     box-sizing: border-box; /* 패딩 포함 계산 */
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
     font-family: 'Apple SD Gothic Neo', 'Nanum Gothic', sans-serif;
   }
   
   .location-title {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
     color: #333;
+    text-align: center;
   }
   
   .location-caption {
     font-size: 16px;
     color: #777;
     text-align: center;
+    margin-bottom: 20px;
   }
   
   .map-container {
@@ -32,25 +34,46 @@
     justify-content: center;
     align-items: center;
     width: 100%; /* 맵이 너비를 가득 채움 */
-    max-width: 600px; /* 데스크톱에서 최대 너비 제한 */
-    flex-grow: 1; /* 남는 공간을 차지하여 높이 조정 */
+    max-width: 800px; /* 데스크톱에서 최대 너비 제한 */
+    height: auto;
   }
   
-  @media (max-width: 600px) {
+  .map-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .location-additional {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    color: #ff69b4;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
     .location-container {
-      padding: 10px; /* 모바일 화면에서 패딩 줄이기 */
+      padding: 15px;
+      height: 100%; /* 모바일 화면에도 부모 높이 채우기 */
     }
   
     .location-title {
-      font-size: 18px; /* 모바일에서 폰트 크기 조정 */
+      font-size: 20px;
     }
   
     .location-caption {
-      font-size: 14px; /* 모바일에서 폰트 크기 줄이기 */
+      font-size: 14px;
     }
   
     .map-container {
-      max-width: 100%; /* 모바일에서는 화면에 가득 차도록 */
+      max-width: 100%; /* 모바일에서는 너비 제한 없이 꽉 차도록 */
+    }
+  
+    .map-buttons {
+      flex-direction: column; /* 모바일에서는 버튼 세로 배치 */
+      gap: 5px;
     }
   }
   
