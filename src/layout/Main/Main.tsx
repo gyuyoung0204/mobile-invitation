@@ -43,7 +43,7 @@ const MainImg = styled.img`
   object-fit: cover;
 
   @media (max-width: 768px) {
-    height: auto; /* 이미지 비율 유지 */
+    height: 100%; /* 모바일에서 이미지 높이도 가득 */
     transform: scale(1.2); /* 이미지를 1.2배 확대 */
   }
 `;
@@ -59,7 +59,7 @@ const FadeOutGradient = styled.div`
 
   /* 모바일에서 그라데이션 수정 */
   @media (max-width: 768px) {
-    height: 30%; /* 모바일에서 높이 증가 */
+    height: 40%; /* 모바일에서 높이를 더 키움 */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
     pointer-events: none; /* 그라데이션이 클릭되지 않도록 설정 */
   }
