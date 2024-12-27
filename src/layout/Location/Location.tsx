@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './location.css';
 import data from 'data.json';
 import Address from './Address.tsx';
