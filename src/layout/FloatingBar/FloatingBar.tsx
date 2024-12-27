@@ -8,10 +8,9 @@ import Heart from '@/assets/icons/heart_plus.svg?react';
 import Share from '@/assets/icons/share.svg?react';
 import Upward from '@/assets/icons/upward.svg?react';
 import Button from '@/components/Button.tsx';
-import { Caption } from '@/components/Text.tsx';
 
 const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
-  const { emojis,madeby } = data;
+  const { emojis } = data;
 
   // TODO: count 기능 사용 원할시 firebase realtime db 연결!
    const [count, setCount] = useState(0);
