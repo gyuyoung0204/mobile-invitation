@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 const Button = styled.button`
-  //font-family: HSSanTokki20-Regular, serif;
+font-family: 'Times New Roman', serif; /* 클래식한 느낌의 폰트 */
   padding: 0.5em 0.8em;
   border-radius: 8px;
   border: 1px solid #dfdfdf;

@@ -74,6 +74,7 @@ const MainTitle = styled.p`
   white-space: pre-line;
   margin-top: 20px;
 `;
+
 const SubTitle = styled.p`
   font-family: 'Times New Roman', serif; /* 동일한 폰트 */
   font-size: 1.1rem;

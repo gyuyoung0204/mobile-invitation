@@ -61,7 +61,7 @@ const AccountWrap = ({
 };
 
 const Wrapper = styled.div`
-  font-family: 'SUITE-Regular';
+  font-family: 'Times New Roman', serif; /* 폰트 변경 */
   padding: 10px 0;
   border-bottom: 1px solid #dfdfdf;
   &:last-of-type {
@@ -80,10 +80,12 @@ const Info = styled.div`
   margin: 5px 0;
 `;
 const Relation = styled.span`
+  font-family: 'Times New Roman', serif; /* 폰트 변경 */
   color: #44484d;
 `;
 const Name = styled.span`
-  font-size: 1rem
+  font-family: 'Times New Roman', serif; /* 폰트 변경 */
+  font-size: 1rem;
 `;
 
 const Details = styled.div`
@@ -92,7 +94,10 @@ const Details = styled.div`
   justify-content: space-between;
 `;
 
-const AccountInfo = styled.div``;
+const AccountInfo = styled.div`
+  font-family: 'Times New Roman', serif; /* 폰트 변경 */
+`;
+
 const CopyButton = styled.button`
   border: none;
   border-radius: 5px;
@@ -120,6 +125,7 @@ const AccountButton = styled.button`
   padding: 0 0.8em;
   width: inherit;
   font-size: 0.7rem;
+  font-family: 'Times New Roman', serif; /* 폰트 변경 */
   cursor: pointer;
   gap: 2px;
   color: #1a1a1a;

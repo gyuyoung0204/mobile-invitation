@@ -5,7 +5,7 @@
   justify-content: center;
   padding: 20px;
   background-color: transparent; /* 컨테이너 배경색 제거 */
-  font-family: 'Apple SD Gothic Neo', 'Nanum Gothic', sans-serif;
+  font-family: 'Times New Roman', serif; /* 폰트 변경 */
 }
 
 .month-title {
@@ -43,7 +43,7 @@
 }
 
 .calendar-day.highlight {
-  background-color: #f3a5a5; /* 강조 날짜 배경색 */
+  background-color: #9575cd; /* 강조 날짜 배경색 */
   color: white; /* 강조 날짜 글자색 */
   font-weight: bold; /* 강조 날짜 굵게 */
 }

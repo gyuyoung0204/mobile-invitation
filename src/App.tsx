@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { NavermapsProvider } from 'react-naver-maps';
+import styled from '@emotion/styled'; // 추가된 스타일링을 위해 임포트
 import { Heading1 } from '@/components/Text.tsx';
 import Wrapper from '@/components/Wrapper.tsx';
 import Account from '@/layout/Account/Account.tsx';
@@ -47,27 +48,27 @@ function App() {
           <Main />
         </Wrapper>
         <Wrapper>
-          <Heading1>모시는 글</Heading1>
+          <CustomHeading1>모시는 글</CustomHeading1>
           <Invitation />
         </Wrapper>
         <Wrapper ref={galleryRef}>
-          <Heading1>Gallery</Heading1>
+          <CustomHeading1>Gallery</CustomHeading1>
           <GalleryWrap />
         </Wrapper>
         <Wrapper>
-          <Heading1>안내</Heading1>
-      <CalendarWithDday />
+          <CustomHeading1>안내</CustomHeading1>
+          <CalendarWithDday />
         </Wrapper>
         <Wrapper>
-          <Heading1>마음 전하실 곳</Heading1>
+          <CustomHeading1>마음 전하실 곳</CustomHeading1>
           <Account />
         </Wrapper>
         <Wrapper>
-          <Heading1>오시는 길</Heading1>
+          <CustomHeading1>오시는 길</CustomHeading1>
           <Location />
         </Wrapper>
         <Wrapper>
-          <Heading1>신랑 신부에게</Heading1>
+          <CustomHeading1>신랑 신부에게</CustomHeading1>
           <Guestbook />
         </Wrapper>
         <FloatingBar isVisible={isVisible} />
@@ -77,3 +78,7 @@ function App() {
 }
 
 export default App;
+
+const CustomHeading1 = styled(Heading1)`
+  font-family: 'Times New Roman', serif; /* 클래식 폰트로 변경 */
+`;
