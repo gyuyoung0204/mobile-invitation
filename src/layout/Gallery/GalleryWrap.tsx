@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styled from '@emotion/styled';
 import PhotoGallery from './PhotoGallery.tsx';
+import './Gallery.css';
 
 const GalleryWrap = () => {
   const [isMoreView, setIsMoreView] = useState(false);
@@ -10,7 +11,7 @@ const GalleryWrap = () => {
   };
 
   return (
-    <ContentsWrap>
+    <div className="location-container">
       <ImageMoreWrap isMoreView={isMoreView}>
         {!isMoreView && <WhiteGradientOverlay />}
         <PhotoGallery />
@@ -18,7 +19,7 @@ const GalleryWrap = () => {
       {!isMoreView && (
         <PlusButton onClick={onClickImageMoreViewButton}>더보기</PlusButton>
       )}
-    </ContentsWrap>
+      </div>
   );
 };
 
