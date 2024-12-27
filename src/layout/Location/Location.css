@@ -1,14 +1,11 @@
 .location-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* 가로 중앙 정렬 */
-    justify-content: flex-start; /* 세로 상단 정렬 */
-    width: 100%; /* 전체 화면 너비 */
-    max-width: 1200px; /* 데스크톱에서 최대 너비 */
-    height: auto; /* 높이를 콘텐츠에 맞춤 */
-    margin: 0 auto; /* 가로 가운데 정렬 */
-    padding: 20px; /* 상하좌우 여백 추가 */
-    box-sizing: border-box; /* 패딩 포함 계산 */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: transparent; /* 컨테이너 배경색 제거 */
+    font-family: 'Times New Roman', serif; /* 폰트 변경 */
   }
   
   .map-container {
