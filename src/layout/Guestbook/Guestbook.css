@@ -1,0 +1,21 @@
+.guestbook-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: transparent; /* 컨테이너 배경색 제거 */
+    font-family: 'Times New Roman', serif; /* 폰트 변경 */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .guestbook-container {
+     
+    width: 90vw; /* 모바일에서 지도 너비 가득 채우기 */
+    padding: 10px; /* 모바일에서 여백 최소화 */
+    }
+  
+  
+  }
+  
