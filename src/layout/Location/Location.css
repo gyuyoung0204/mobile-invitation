@@ -54,7 +54,7 @@
     .map-container {
       width: 90%; /* 모바일에서 지도 너비 조정 */
       height: 60vh; /* 모바일에서 지도 높이 증가 */
-      margin: 15px auto; /* 모바일에서도 가운데 정렬 */
+      margin:  auto; /* 모바일에서도 가운데 정렬 */
     }
   
     .location-caption {
