@@ -32,7 +32,6 @@ const ContentsWrap = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%; /* 전체 화면 너비에 맞춤 */
-  height: 100%; /* 높이도 부모 컨테이너에 맞춤 */
 `;
 
 const ImageMoreWrap = styled.div<{ isMoreView: boolean }>`
@@ -74,9 +73,11 @@ const PlusButton = styled.div`
   border: 1px solid #dfdfdf;
   cursor: pointer;
   background: #fff;
+  margin-top: 20px; /* 더보기 버튼을 약간 아래로 이동 */
 
   @media (max-width: 768px) {
     font-size: 0.9rem; /* 모바일에서 버튼 글자 크기 조정 */
     padding: 8px 12px; /* 버튼 여백 축소 */
+    margin-top: 15px; /* 모바일에서 버튼 위치 조정 */
   }
 `;
