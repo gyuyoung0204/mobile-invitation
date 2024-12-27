@@ -31,7 +31,7 @@ const LocationWrapper = styled.div`
   box-sizing: border-box; /* 패딩 포함 계산 */
   overflow: hidden; /* 불필요한 스크롤 방지 */
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     width: 100vw; /* 모바일에서 화면 너비를 뷰포트에 맞춤 */
     height: 100vh; /* 모바일에서 화면 높이도 뷰포트에 맞춤 */
     max-width: 100%; /* 모바일에서는 너비 제한 해제 */
