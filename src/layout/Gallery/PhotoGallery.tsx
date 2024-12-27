@@ -5,27 +5,9 @@ import images from '@/layout/Gallery/Images.ts';
 const PhotoGallery = () => {
   const smallItemStyles: React.CSSProperties = {
     cursor: 'pointer', // 클릭 가능하도록 설정
-    objectFit: 'cover', // 이미지를 박스에 맞게 자르되 비율 유지
-    width: '100%', // 이미지가 셀의 너비를 가득 채우도록 설정
-    height: '100%', // 이미지가 셀의 높이를 가득 채우도록 설정
-    borderRadius: '5px', // 모서리를 약간 둥글게 설정
-  };
-
-  const gridContainerStyles: React.CSSProperties = {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))', // 최소 120px, 셀이 자동으로 크기를 조정
-    gap: '5px', // 셀 간격 설정
-    width: '100%', // 전체 너비를 가득 채우기
-    margin: '0 auto', // 중앙 정렬
-    padding: '0', // 상하 좌우 여백 제거
-    boxSizing: 'border-box', // 패딩 포함 크기 계산
-  };
-
-  const gridItemStyles: React.CSSProperties = {
-    width: '100%', // 셀 너비
-    position: 'relative', // 내부 요소 배치용
-    overflow: 'hidden', // 이미지가 셀을 넘지 않도록 설정
-    margin: '0', // 상하 여백 제거
+    objectFit: 'contain',
+    width: '100px',
+    height: '150px',
   };
 
   return (
@@ -42,20 +24,26 @@ const PhotoGallery = () => {
           pswpInstance.options.maxZoomLevel = 1; // 줌 비율 제한
         });
 
+    
+
         // 줌 메서드 오버라이드
         pswpInstance.zoomTo = () => {}; // 줌 메서드를 비활성화
-      }}
-    >
-      <div style={gridContainerStyles}>
-        {images.map((image, index) => (
-          <div key={index} style={gridItemStyles}>
+      }}>
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(3, 1fr)',
+          gridGap: 2,
+        }}>
+        {images.map((image, index) => {
+          return (
             <Item
+              key={index}
               cropped
               original={image.source}
               thumbnail={image.source}
               width={image.width}
-              height={image.height}
-            >
+              height={image.height}>
               {({ ref, open }) => (
                 <img
                   style={smallItemStyles}
@@ -66,8 +54,8 @@ const PhotoGallery = () => {
                 />
               )}
             </Item>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </Gallery>
   );

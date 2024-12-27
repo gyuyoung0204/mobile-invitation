@@ -14,7 +14,11 @@
     width: 100vw; /* 모바일에서 지도 너비 가득 채우기 */
     padding: 10px; /* 모바일에서 여백 최소화 */
     }
-  
+    .plus-button {
+        font-size: 0.8rem; /* 모바일에서 버튼 글자 크기 더 줄이기 */
+        padding: 5px 10px; /* 버튼 여백 축소 */
+        margin-top: 10px; /* 모바일에서 버튼 위치 조정 */
+      }
   }
   
 .image-more-wrap {
@@ -43,15 +47,19 @@
   }
   
   .plus-button {
-    width: 100%;
-    max-width: 200px; /* 버튼 최대 너비 제한 */
-    box-sizing: border-box;
-    padding: 10px 16px;
-    font-size: 1rem;
+    width: auto;
+    padding: 6px 12px; /* 버튼 크기 줄이기 */
+    font-size: 0.9rem; /* 폰트 크기 줄이기 */
     text-align: center;
     border-radius: 4px;
     border: 1px solid #dfdfdf;
     cursor: pointer;
     background: #fff;
-    margin-top: 20px; /* 더보기 버튼을 약간 아래로 이동 */
+    margin-top: 15px; /* 더보기 버튼을 약간 위로 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* 센터 정렬 */
+    align-self: center; /* 부모 요소 내에서 중앙 정렬 */
   }

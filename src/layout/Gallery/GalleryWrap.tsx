@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import './Gallery.css';
+import styled from '@emotion/styled';
 import PhotoGallery from './PhotoGallery.tsx';
+import './Gallery.css';
 
 const GalleryWrap = () => {
   const [isMoreView, setIsMoreView] = useState(false);
@@ -23,5 +24,6 @@ const GalleryWrap = () => {
     </div>
   );
 };
+
 
 export default GalleryWrap;
