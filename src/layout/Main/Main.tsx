@@ -39,12 +39,13 @@ const MainImgWrapper = styled.div`
 
 const MainImg = styled.img`
   width: 100%;
+  height: 100%; /* 이미지 높이 가득 */
   display: block;
   object-fit: cover;
 
   @media (max-width: 768px) {
-    height: 100%; /* 모바일에서 이미지 높이도 가득 */
-    transform: scale(1.2); /* 이미지를 1.2배 확대 */
+    object-fit: contain; /* 이미지 비율 유지하며 전체 표시 */
+    transform: none; /* 확대 효과 제거 */
   }
 `;
 
