@@ -48,7 +48,7 @@ const HighlightedName = styled.span`
 
 const HostContainer = styled.div`
   gap: 8px;
-  font-family: HSSanTokki20-Regular, serif;
+  font-family: 'Times New Roman', serif; /* 폰트 변경 */
 `;
 
 const HostDetails = styled.div`
