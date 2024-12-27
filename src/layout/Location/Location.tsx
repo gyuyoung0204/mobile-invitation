@@ -16,10 +16,7 @@ const Location = () => {
       </div>
         
       <MapButtons />
-        <div className="location-container">
-        
         <Address />
-      </div>
     </div>
   );
 };
