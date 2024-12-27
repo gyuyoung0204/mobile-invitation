@@ -1,0 +1,123 @@
+.wrapper {
+    font-family: 'Times New Roman', serif;
+    padding: 10px 0;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  .wrapper:last-of-type {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .info {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 간격을 조금 늘림 */
+    margin: 10px 0; /* 간격 조정 */
+  }
+  .relation {
+    font-family: 'Times New Roman', serif;
+    color: #44484d;
+    font-size: 1.2rem; /* 폰트 크기 확대 */
+    font-weight: bold; /* 강조 */
+  }
+  .name {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2rem; /* 폰트 크기 확대 */
+  }
+  
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem; /* 폰트 크기 확대 */
+  }
+  
+  .account-info {
+    font-family: 'Times New Roman', serif;
+  }
+  
+  .copy-button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; /* 버튼 크기 확대 */
+    cursor: pointer;
+    gap: 5px;
+    outline: none;
+    box-shadow: none;
+    background: white;
+    font-size: 1rem; /* 버튼 글자 크기 확대 */
+  }
+  
+  .account-links {
+    display: flex;
+    width: 100%;
+    gap: 10px; /* 간격을 조금 늘림 */
+    margin-top: 10px;
+  }
+  
+  .account-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px 12px; /* 버튼 크기 확대 */
+    width: inherit;
+    font-size: 1rem; /* 버튼 글자 크기 확대 */
+    font-family: 'Times New Roman', serif;
+    cursor: pointer;
+    gap: 5px;
+    color: #1a1a1a;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    background: white;
+  }
+  
+  .kakaopay-img {
+    width: 60px; /* 이미지 크기 확대 */
+  }
+  
+  .toss-img {
+    width: 80px; /* 이미지 크기 확대 */
+  }
+  
+  /* 모바일 스타일 */
+  @media (max-width: 768px) {
+    .wrapper {
+      padding: 15px 0; /* 내부 여백 확대 */
+    }
+  
+    .relation,
+    .name {
+      font-size: 1.4rem; /* 모바일에서 폰트 크기 더 확대 */
+    }
+  
+    .details {
+      font-size: 1.3rem; /* 모바일에서 폰트 크기 더 확대 */
+    }
+  
+    .copy-button {
+      padding: 8px 12px; /* 모바일에서 버튼 크기 확대 */
+      font-size: 1.2rem; /* 모바일에서 버튼 글자 크기 확대 */
+    }
+  
+    .account-links {
+      gap: 12px; /* 모바일에서 간격 확대 */
+    }
+  
+    .kakaopay-img {
+      width: 70px; /* 모바일에서 이미지 크기 확대 */
+    }
+  
+    .toss-img {
+      width: 90px; /* 모바일에서 이미지 크기 확대 */
+    }
+  }
+  
