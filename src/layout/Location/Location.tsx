@@ -11,10 +11,7 @@ const Location = () => {
   return (
     <div className="location-container">
       <Caption textAlign={'center'}>{mapInfo.address2}</Caption>
-      <div className="map-container">
         <Map />
-      </div>
-        
       <MapButtons />
         <Address />
     </div>
