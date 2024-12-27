@@ -1,12 +1,12 @@
 .location-container {
-    width: 100%; /* 기본 너비 */
+    width: 100%; /* 전체 화면 너비 */
     max-width: 1200px; /* 데스크톱 화면에서 최대 너비 제한 */
     margin: 0 auto; /* 가운데 정렬 */
     display: flex;
     flex-direction: column;
+    align-items: center; /* 모든 항목을 가운데 정렬 */
     padding: 0; /* 내부 여백 제거 */
     box-sizing: border-box; /* 패딩 포함 계산 */
-    overflow: hidden; /* 불필요한 스크롤 방지 */
   }
   
   .location-caption {
@@ -19,12 +19,14 @@
   
   .map-container {
     width: 100%; /* 지도 컨테이너 너비 */
+    max-width: 600px; /* 데스크톱에서 최대 너비 제한 */
     height: 70%; /* 지도 높이 비율 */
     margin: 20px 0; /* 상하 간격 */
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f5f5f5; /* 로딩 시 배경색 */
+    box-sizing: border-box; /* 패딩 포함 계산 */
   }
   
   .map-buttons {
@@ -39,17 +41,20 @@
     font-family: 'Times New Roman', serif; /* 폰트 변경 */
     font-size: 1rem; /* 글자 크기 */
     margin-top: 15px;
-  } 
+  }
   
   @media (max-width: 768px) {
     .location-container {
       width: 100vw; /* 모바일 화면 너비에 맞춤 */
       height: auto; /* 콘텐츠 높이에 맞춤 */
-      padding: 10px; /* 모바일에서 여백 추가 */
+      padding: 15px; /* 모바일에서 여백 추가 */
+      box-sizing: border-box; /* 패딩 포함 계산 */
     }
   
     .map-container {
+      width: 90%; /* 모바일에서 지도 너비 조정 */
       height: 60vh; /* 모바일에서 지도 높이 증가 */
+      margin: 15px auto; /* 모바일에서도 가운데 정렬 */
     }
   
     .location-caption {
