@@ -47,7 +47,7 @@
     .location-container {
       width: 100vw; /* 모바일 화면 너비에 맞춤 */
       height: auto; /* 콘텐츠 높이에 맞춤 */
-      padding: 15px; /* 모바일에서 여백 추가 */
+      padding: 0px; /* 모바일에서 여백 추가 */
       box-sizing: border-box; /* 패딩 포함 계산 */
     }
   
