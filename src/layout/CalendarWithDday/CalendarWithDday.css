@@ -9,33 +9,33 @@
 }
 
 .month-title {
-  font-size: 20px;
+  font-size: 24px; /* 제목 크기 키움 */
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 15px; /* 제목과 캘린더 간격 증가 */
   color: #333;
   text-align: center;
 }
 
 .calendar-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 5px; /* 셀 사이의 간격 줄이기 */
+  grid-template-columns: repeat(7, 1fr); /* 7열 레이아웃 */
+  gap: 10px; /* 셀 간 간격 확대 */
   width: 100%;
-  max-width: 400px; /* 전체 캘린더 너비 조정 */
+  max-width: 500px; /* 데스크톱에서 너비 확대 */
 }
 
 .calendar-day {
-  width: 40px; /* 날짜 셀 크기 */
-  height: 40px;
+  width: 55px; /* 날짜 셀 크기 확대 */
+  height: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 18px; /* 날짜 폰트 크기 확대 */
   color: #555;
-  background-color: transparent; /* 셀 배경 제거 */
-  border: none; /* 셀 테두리 제거 */
+  background-color: transparent; /* 기본 배경 제거 */
+  border: none; /* 테두리 제거 */
   border-radius: 50%; /* 둥근 셀 유지 */
-  transition: background-color 0.3s ease; /* 하이라이트 전환 효과 */
+  transition: transform 0.3s ease; /* 클릭 시 부드러운 효과 */
 }
 
 .calendar-day.empty {
@@ -45,37 +45,50 @@
 .calendar-day.highlight {
   background-color: #f3a5a5; /* 강조 날짜 배경색 */
   color: white; /* 강조 날짜 글자색 */
-  font-weight: bold;
+  font-weight: bold; /* 강조 날짜 굵게 */
 }
 
 .dday-message {
-  margin-top: 15px;
-  font-size: 16px;
+  margin-top: 25px;
+  font-size: 20px; /* D-Day 폰트 크기 확대 */
   color: #777;
-  font-weight: normal;
+  font-weight: bold; /* D-Day 굵게 강조 */
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .calendar-grid {
+    max-width: 450px; /* 화면 크기에 따라 캘린더 너비 제한 */
+  }
+
+  .calendar-day {
+    width: 50px; /* 날짜 셀 크기 조정 */
+    height: 50px;
+    font-size: 16px; /* 폰트 크기 조정 */
+  }
 }
 
 @media (max-width: 600px) {
   .calendar-container {
-    padding: 10px;
+    padding: 10px; /* 모바일에서 여백 최소화 */
   }
 
   .calendar-grid {
-    max-width: 100%; /* 모바일에서는 화면 너비에 맞춤 */
+    gap: 8px; /* 모바일에서 셀 간 간격 감소 */
+    max-width: 100%; /* 모바일에서 화면 너비에 맞춤 */
   }
 
   .calendar-day {
-    width: 35px; /* 셀 크기 줄이기 */
-    height: 35px;
-    font-size: 12px; /* 폰트 크기 조정 */
+    width: 48px; /* 모바일에서 셀 크기 조정 */
+    height: 48px;
+    font-size: 14px; /* 폰트 크기 조정 */
+  }
+
+  .month-title {
+    font-size: 22px; /* 모바일에서 제목 크기 조정 */
   }
 
   .dday-message {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #777;
-    font-weight: bold; /* 굵게 강조 */
-    text-align: center;
+    font-size: 18px; /* 모바일에서 D-Day 폰트 크기 조정 */
   }
 }
