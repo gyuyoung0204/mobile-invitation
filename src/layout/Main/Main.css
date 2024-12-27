@@ -1,0 +1,79 @@
+/* 전체 컨테이너 스타일 */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* 전체 너비 */
+    height: auto; /* 높이는 콘텐츠에 따라 조정 */
+    overflow: hidden;
+  }
+  
+  /* 메인 이미지 컨테이너 */
+  .main-img-wrapper {
+    position: relative;
+    width: 100%; /* 부모 컨테이너 너비에 맞춤 */
+    height: 100vh; /* 화면 높이를 가득 채움 */
+    overflow: hidden; /* 초과 콘텐츠 숨김 */
+  }
+  
+  /* 메인 이미지 스타일 */
+  .main-img {
+    width: 100%; /* 부모 컨테이너 너비에 맞춤 */
+    height: 100%; /* 부모 컨테이너 높이에 맞춤 */
+    object-fit: cover; /* 이미지 비율 유지하며 부모 영역을 가득 채움 */
+    display: block;
+  }
+  
+  /* 그라데이션 효과 */
+  .fade-out-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%; /* 그라데이션 높이 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    pointer-events: none; /* 클릭 방지 */
+  }
+  
+  /* 제목 스타일 */
+  .main-title {
+    font-family: 'Times New Roman', serif; /* 클래식 폰트 적용 */
+    font-size: 2rem;
+    color: #2f2120; /* 기본 색상 */
+    line-height: 1.2;
+    font-weight: bold; /* 굵은 텍스트 */
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* 부제목 스타일 */
+  .sub-title {
+    font-family: 'Times New Roman', serif; /* 동일한 폰트 */
+    font-size: 1.1rem;
+    color: #2f2120;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* 모바일 환경에서의 스타일 조정 */
+  @media (max-width: 768px) {
+    .main-img-wrapper {
+      height: 100vh; /* 모바일에서 화면 높이 가득 채우기 */
+    }
+  
+    .main-img {
+      object-fit: contain; /* 비율 유지하며 전체 이미지를 표시 */
+      transform: none; /* 불필요한 확대 제거 */
+    }
+  
+    .main-title {
+      font-size: 1.8rem; /* 모바일에서 제목 크기 조정 */
+    }
+  
+    .sub-title {
+      font-size: 1rem; /* 모바일에서 부제목 크기 조정 */
+    }
+  }
+  
