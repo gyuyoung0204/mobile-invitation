@@ -1,34 +1,34 @@
-import './Location.css';
+import styled from '@emotion/styled';
 import data from 'data.json';
 import Address from './Address.tsx';
 import Map from './Map.tsx';
 import MapButtons from './MapButtons.tsx';
+import { Caption, PointTitle } from '@/components/Text.tsx';
 
 const Location = () => {
   const { mapInfo } = data;
   return (
-    <div className="location-container">
-      {/* 제목 */}
-      <h1 className="location-title">{mapInfo.address1}</h1>
-
-      {/* 캡션 */}
-      <p className="location-caption">{mapInfo.address2}</p>
-
-      {/* 지도 */}
-      <div className="map-container">
-        <Map />
-      </div>
-
-      {/* 버튼 */}
-      <div className="map-buttons">
-        <MapButtons />
-      </div>
-      <div className="location-additional">
-      {/* 주소 */}
+    <LocationWrapper>
+      <PointTitle>{mapInfo.address1}</PointTitle>
+      <Caption textAlign={'center'}>{mapInfo.address2}</Caption>
+      <Map />
+      <MapButtons />
       <Address />
-    </div>
-    </div>
+    </LocationWrapper>
   );
 };
 
 export default Location;
+
+const LocationWrapper = styled.div`
+  width: 100%; /* 모바일 화면에서 가득 채우기 */
+  max-width: 1200px; /* 데스크톱 화면에서 최대 너비 제한 */
+  margin:210 auto; /* 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  padding: 20px; /* 내부 여백 추가 */
+
+  @media (max-width: 600px) {
+    padding: 10px; /* 모바일 화면에서 패딩 줄이기 */
+  }
+`;
