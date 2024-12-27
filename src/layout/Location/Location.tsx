@@ -11,8 +11,8 @@ const Location = () => {
     <div className="location-container">
       <p className="location-caption">{mapInfo.address2}</p>
       <div className="map-container">
-        <Map />
-      </div>
+        <Map /> 
+      </div> 
       <div className="map-buttons">
         <MapButtons />
       </div>

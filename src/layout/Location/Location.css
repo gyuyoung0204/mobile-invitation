@@ -39,7 +39,7 @@
     font-family: 'Times New Roman', serif; /* 폰트 변경 */
     font-size: 1rem; /* 글자 크기 */
     margin-top: 15px;
-  }
+  } 
   
   @media (max-width: 768px) {
     .location-container {
