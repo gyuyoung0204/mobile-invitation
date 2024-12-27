@@ -26,12 +26,12 @@
   
   @media (max-width: 768px) {
     .location-container {
-        width: calc(100% - 20px); /* 모바일 화면에서 좌우 여백 제거 */
+      width: 100%; /* 모바일 화면 가득 채우기 */
       padding: 10px; /* 내부 여백 추가 */
     }
   
     .map-container {
-        width: calc(100% - 20px); /* 모바일에서 좌우 여백을 줄여 중앙 정렬 */
+      width: 100%; /* 모바일에서 지도 너비 가득 채우기 */
       max-width: none; /* 최대 너비 제한 해제 */
       height: 50vh; /* 모바일에서 지도 높이 설정 */
       margin: 10px auto; /* 상하 간격 조정 */
