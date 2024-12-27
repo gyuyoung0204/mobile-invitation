@@ -11,6 +11,7 @@ interface IAccountProps {
   kakaopayAccount?: string;
   tossAccount?: string;
 }
+
 const AccountWrap = ({
   name,
   relation,
@@ -64,12 +65,19 @@ const Wrapper = styled.div`
   font-family: 'SUITE-Regular';
   padding: 10px 0;
   border-bottom: 1px solid #dfdfdf;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* 너비를 화면 가득 채우기 */
+  box-sizing: border-box; /* 패딩 포함 크기 계산 */
+
   &:last-of-type {
     margin-bottom: 0;
     border-bottom: none;
   }
-  display: flex;
-  flex-direction: column;
+
+  @media (max-width: 768px) {
+    padding: 15px; /* 모바일에서 패딩 추가 */
+  }
 `;
 
 const Info = styled.div`
@@ -78,21 +86,36 @@ const Info = styled.div`
   align-items: center;
   gap: 5px;
   margin: 5px 0;
+  width: 100%; /* 너비 조정 */
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* 모바일에서 세로 정렬 */
+    align-items: flex-start;
+  }
 `;
+
 const Relation = styled.span`
   color: #44484d;
 `;
+
 const Name = styled.span`
-  font-size: 1rem
+  font-size: 1rem;
 `;
 
 const Details = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%; /* 너비를 화면 가득 채우기 */
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* 모바일에서 세로 정렬 */
+    align-items: flex-start;
+  }
 `;
 
 const AccountInfo = styled.div``;
+
 const CopyButton = styled.button`
   border: none;
   border-radius: 5px;
@@ -106,8 +129,13 @@ const CopyButton = styled.button`
 
 const AccountLinks = styled.div`
   display: flex;
-  width: 100%;
-  gap: 2px;
+  width: 100%; /* 링크 섹션 가득 채우기 */
+  gap: 5px; /* 버튼 간격 증가 */
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap; /* 모바일에서 버튼이 여러 줄로 배치될 수 있도록 설정 */
+    justify-content: center; /* 가운데 정렬 */
+  }
 `;
 
 const AccountButton = styled.button`
@@ -118,10 +146,11 @@ const AccountButton = styled.button`
   border-radius: 5px;
   margin: 5px 0;
   padding: 0 0.8em;
-  width: inherit;
-  font-size: 0.7rem;
+  width: 100%; /* 버튼 가득 채우기 */
+  max-width: 150px; /* 버튼 최대 너비 제한 */
+  font-size: 0.8rem; /* 폰트 크기 조금 증가 */
   cursor: pointer;
-  gap: 2px;
+  gap: 5px;
   color: #1a1a1a;
   text-decoration: none;
   outline: none;
@@ -131,10 +160,18 @@ const AccountButton = styled.button`
 
 const KakaopayImg = styled.img`
   width: 50px;
+
+  @media (max-width: 768px) {
+    width: 40px; /* 모바일에서 이미지 크기 축소 */
+  }
 `;
 
 const TossImg = styled.img`
   width: 70px;
+
+  @media (max-width: 768px) {
+    width: 60px; /* 모바일에서 이미지 크기 축소 */
+  }
 `;
 
 export default AccountWrap;
