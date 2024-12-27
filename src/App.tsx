@@ -15,11 +15,13 @@ import FlowerFalling from '@/layout/FlowerFalling/FlowerFalling.tsx';
 // import MusicPlayer from '@/layout/MusicPlayer/MusicPlayer.tsx';
 import CalendarWithDday from '@/layout/CalendarWithDday/CalendarWithDday.tsx';
 
+
 function App() {
   const ncpClientId = import.meta.env.VITE_APP_NAVERMAPS_CLIENT_ID;
   const [isVisible, setIsVisible] = useState(false);
   const galleryRef = useRef<HTMLDivElement>(null);
 
+  
   useEffect(() => {
     const checkScrollPosition = () => {
       if (galleryRef.current) {
@@ -71,7 +73,7 @@ function App() {
           <CustomHeading1>신랑 신부에게</CustomHeading1>
           <Guestbook />
           
-         <CustomHeading2>made by 규동</CustomHeading2>
+         <CustomHeading2>Copyright 2024. GYUDONG. all rights reserved.</CustomHeading2>
         </Wrapper>
         
         <FloatingBar isVisible={isVisible} />
