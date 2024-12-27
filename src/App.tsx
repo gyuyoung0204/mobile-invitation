@@ -70,9 +70,14 @@ function App() {
         <Wrapper>
           <CustomHeading1>신랑 신부에게</CustomHeading1>
           <Guestbook />
+          
+         <CustomHeading2>made by 규동</CustomHeading2>
         </Wrapper>
+        
         <FloatingBar isVisible={isVisible} />
+      
       </Container>
+      
     </NavermapsProvider>
   );
 }
@@ -82,3 +87,11 @@ export default App;
 const CustomHeading1 = styled(Heading1)`
   font-family: 'Times New Roman', serif; /* 클래식 폰트로 변경 */
 `;
+const CustomHeading2 = styled(Heading1)`
+font-family: 'Times New Roman', serif; /* 동일한 클래식 폰트 */
+font-size: 1.0rem; /* 텍스트 크기 조정 */
+margin: 10px;
+color: #2F2120;
+white-space: pre-line;
+`;
+

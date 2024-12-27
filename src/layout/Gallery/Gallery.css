@@ -6,9 +6,6 @@
     padding: 20px;
     background-color: transparent; /* 컨테이너 배경색 제거 */
     font-family: 'Times New Roman', serif; /* 폰트 변경 */
-    width: 100%; /* 전체 화면 너비 */
-    max-width: 1200px; /* 데스크톱에서 최대 너비 */
-    box-sizing: border-box;
   }
   
   
