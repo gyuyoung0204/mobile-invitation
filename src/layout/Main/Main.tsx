@@ -66,17 +66,18 @@ const FadeOutGradient = styled.div`
 `;
 
 const MainTitle = styled.p`
-  font-family: HSSanTokki20-Regular, serif;
+  font-family: 'Times New Roman', serif; /* 클래식 폰트 적용 */
   font-size: 2rem;
-  color: #2F2120;
+  color: #2F2120; /* 기존 색상 유지 */
   line-height: 120%;
+  font-weight: bold; /* 텍스트를 굵게 강조 */
   white-space: pre-line;
   margin-top: 20px;
 `;
-
 const SubTitle = styled.p`
+  font-family: 'Times New Roman', serif; /* 동일한 폰트 */
   font-size: 1.1rem;
-  color: #2F2120;
+  color: #2F2120; /* 기존 색상 유지 */
   line-height: 140%;
   white-space: pre-line;
 `;

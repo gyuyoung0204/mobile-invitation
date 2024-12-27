@@ -1,9 +1,9 @@
 body {
-  font-family: SUITE-Regular, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Times New Roman', serif; /* 클래식한 폰트로 변경 */
   line-height: 1.5;
   font-weight: 400;
 
-  color: rgba(255, 255, 255, 0.87);
+  color: #9575cd; /* 진한 연보라색으로 변경 */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,7 +16,7 @@ body {
   min-width: 280px;
   display: flex;
   justify-content: center;
-  background-color: #E0E7D9;
+  background-color: #E0E7D9; /* 배경색 유지 */
 }
 
 @font-face {
