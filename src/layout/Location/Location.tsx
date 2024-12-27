@@ -1,5 +1,5 @@
 
-import './location.css';
+import './Location.css';
 import data from 'data.json';
 import Address from './Address.tsx';
 import Map from './Map.tsx';
@@ -7,7 +7,7 @@ import MapButtons from './MapButtons.tsx';
 
 const Location = () => {
   const { mapInfo } = data;
-  return (
+  return (  
     <div className="location-container">
       <p className="location-caption">{mapInfo.address2}</p>
       <div className="map-container">
