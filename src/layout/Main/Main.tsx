@@ -32,7 +32,7 @@ const MainImgWrapper = styled.div`
   overflow: hidden;
 
   @media (max-width: 768px) {
-    width: 90vw; /* 모바일에서 너비는 뷰포트 가득 */
+    width: 100vw; /* 모바일에서 너비는 뷰포트 가득 */
     height: 100vh; /* 높이도 뷰포트 가득 */
   }
 `;
