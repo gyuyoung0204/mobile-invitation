@@ -89,4 +89,8 @@ img {
     font-size: 0.8rem;
     padding: 6px 12px;
   }
+  .gallery-container {
+    padding: 10px; /* 모바일에서 여백 최소화 */
+    width: 100%;
+}
 }
