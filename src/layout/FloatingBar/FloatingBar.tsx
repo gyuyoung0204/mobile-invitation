@@ -1,4 +1,4 @@
- import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import data from 'data.json';
  import { increment, onValue, ref, update } from 'firebase/database';
@@ -17,7 +17,7 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
 
    // TODO: realtime db 에 likes 객체 추가.  
   useEffect(() => {
-    const dbRef = ref(realtimeDb, 'likes');
+    const dbRef = ref(realtimeDb, ,'likes');
     console.log(dbRef);
     onValue(dbRef, (snapshot) => {
       setCount(Number(snapshot.val()));
