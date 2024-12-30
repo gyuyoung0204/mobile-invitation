@@ -91,6 +91,6 @@ img {
   }
   .gallery-container {
     padding: 10px; /* 모바일에서 여백 최소화 */
-    width: 100%;
+    width: 100vw;
 }
 }
