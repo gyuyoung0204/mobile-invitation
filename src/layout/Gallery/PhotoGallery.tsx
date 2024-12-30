@@ -10,8 +10,8 @@ const PhotoGallery = () => {
   const smallItemStyles: React.CSSProperties = {
     cursor: 'pointer', // 클릭 가능하도록 설정
     objectFit: 'contain',
-    width: isMobile ? '140px' : '180px', // 모바일에서 크기를 조금 키움
-    height: isMobile ? '210px' : '270px', // 비율 유지 (4:3)
+    width: isMobile ? '120px' : '180px', // 모바일에서 크기를 조금 키움
+    height: isMobile ? '180px' : '270px', // 비율 유지 (4:3)
   };
 
   return (
