@@ -10,19 +10,17 @@ const GalleryWrap = () => {
   };
 
   return (
-    <div className="contents-wrap">
+    <div className="gallery-container">
       <div className={`image-more-wrap ${isMoreView ? 'is-more-view' : ''}`}>
-        {!isMoreView && <div className="white-gradient-overlay" />}
         <PhotoGallery />
       </div>
       {!isMoreView && (
-        <div className="plus-button" onClick={onClickImageMoreViewButton}>
+        <button className="plus-button" onClick={onClickImageMoreViewButton}>
           더보기
-        </div>
+        </button>
       )}
     </div>
   );
 };
-
 
 export default GalleryWrap;

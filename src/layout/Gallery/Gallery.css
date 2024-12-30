@@ -1,66 +1,81 @@
 .gallery-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: transparent; /* 컨테이너 배경색 제거 */
-    font-family: 'Times New Roman', serif; /* 폰트 변경 */
-  }
-  
-  
-  @media (max-width: 768px) {
-    .gallery-container {
-     
-    width: 100vw; /* 모바일에서 지도 너비 가득 채우기 */
-    padding: 10px; /* 모바일에서 여백 최소화 */
-    }
-    .plus-button {
-        font-size: 0.8rem; /* 모바일에서 버튼 글자 크기 더 줄이기 */
-        padding: 5px 10px; /* 버튼 여백 축소 */
-        margin-top: 10px; /* 모바일에서 버튼 위치 조정 */
-      }
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 .image-more-wrap {
-    position: relative;
-    width: 100%; /* 갤러리 너비를 화면에 맞춤 */
-    max-height: 60vh; /* 초기 높이 제한 */
-    overflow: hidden;
-    margin: 0; /* 상하 여백 완전히 제거 */
-    padding: 0; /* 내부 여백 제거 */
+  position: relative;
+  width: 100%;
+  max-height: 60vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.image-more-wrap.is-more-view {
+  max-height: none;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(48%, 1fr)); /* 2개씩 보여주기 */
+  gap: 10px; /* 사진 간 간격 */
+  width: 100%;
+  padding: 0;
+}
+
+.gallery-item {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05); /* 호버 시 확대 */
+}
+
+.white-gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.plus-button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+}
+
+.plus-button:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr)); /* 모바일에서도 2개씩 */
+    gap: 8px;
   }
-  
-  .image-more-wrap.is-more-view {
-    max-height: 100%; /* 더보기 클릭 시 전체 높이 사용 */
-  }
-  
-  .white-gradient-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 20%; /* 하단 부분만 그라데이션 효과 */
-    background: linear-gradient(
-      rgba(255, 255, 255, 0) 0%,
-      rgb(255, 255, 255) 100%
-    );
-  }
-  
+
   .plus-button {
-    width: auto;
-    padding: 6px 12px; /* 버튼 크기 줄이기 */
-    font-size: 0.9rem; /* 폰트 크기 줄이기 */
-    text-align: center;
-    border-radius: 4px;
-    border: 1px solid #dfdfdf;
-    cursor: pointer;
-    background: #fff;
-    margin-top: 15px; /* 더보기 버튼을 약간 위로 */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    /* 센터 정렬 */
-    align-self: center; /* 부모 요소 내에서 중앙 정렬 */
+    font-size: 0.8rem;
+    padding: 6px 12px;
   }
+}
