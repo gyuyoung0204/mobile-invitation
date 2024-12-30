@@ -1,6 +1,6 @@
 import { Gallery, Item } from 'react-photoswipe-gallery';
 import 'photoswipe/style.css';
-import images from '@/layout/Gallery/Images.ts';
+import images from './Images.ts';
 
 const PhotoGallery = () => {
   return (
@@ -10,13 +10,15 @@ const PhotoGallery = () => {
         maxZoomLevel: 1,
         wheelToZoom: false,
         clickToCloseNonZoomable: true,
+        bgOpacity: 0.9,
+        fullscreenEl: true,
       }}
     >
       <div className="gallery-grid">
         {images.map((image, index) => (
           <Item
             key={index}
-            cropped
+            cropped={false}
             original={image.source}
             thumbnail={image.source}
             width={image.width}
