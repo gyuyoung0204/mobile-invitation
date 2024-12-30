@@ -33,7 +33,7 @@
       }
         .gallery-item {
           width: 180px; /* 모바일에서 이미지 크기를 줄임 */
-          height: 280px; /* 비율 유지 */
+          height: 300px; /* 비율 유지 */
         }
       }
   
