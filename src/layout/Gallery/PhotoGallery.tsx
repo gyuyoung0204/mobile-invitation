@@ -10,8 +10,8 @@ const PhotoGallery = () => {
   const smallItemStyles: React.CSSProperties = {
     cursor: 'pointer', // 클릭 가능하도록 설정
     objectFit: 'contain',
-    width: isMobile ? '180px' : '200px', // 모바일에서 크기를 조금 키움
-    height: isMobile ? '270px' : '300px', // 비율 유지 (4:3)
+    width: isMobile ? '150px' : '180px', // 모바일에서 크기를 조금 키움
+    height: isMobile ? '225px' : '270px', // 비율 유지 (4:3)
   };
 
   return (
@@ -33,7 +33,7 @@ const PhotoGallery = () => {
       <div
         style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(2, 1fr)',
+          gridTemplateColumns: 'repeat(3, 1fr)',
           gridGap: 2,
         }}
       >
@@ -41,7 +41,7 @@ const PhotoGallery = () => {
           return (
             <Item
               key={index}
-              cropped
+              cropped={false} // 원본 비율 유지
               original={image.source}
               thumbnail={image.source}
               width={image.width}
