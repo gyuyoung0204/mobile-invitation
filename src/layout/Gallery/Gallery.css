@@ -22,13 +22,15 @@
   max-height: none;
 }
 
+/* Gallery.css */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2열 레이아웃 */
-  gap: 10px; /* 사진 간 간격 */
-  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr)); /* 반응형으로 이미지 크기 조정 */
+  gap: 2px;
+  width: 100vw;
   margin: 0 auto;
 }
+
 
 .gallery-item {
   width: 100%;
@@ -72,11 +74,15 @@
 .plus-button:hover {
   background-color: #f0f0f0;
 }
-
+img {
+  width: 100%;
+  height: auto; /* 이미지 비율 유지 */
+  object-fit: cover; /* 비율 유지하면서 가득 채우기 */
+}
 @media (max-width: 768px) {
   .gallery-grid {
-    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr)); /* 모바일에서도 2개씩 */
-    gap: 8px;
+    grid-template-columns: repeat(2, 1fr); /* 모바일에서 두 개씩 표시 */
+    gap: 4px;
   }
 
   .plus-button {
