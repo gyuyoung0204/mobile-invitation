@@ -42,8 +42,8 @@ const images = [   /* 이미지 경로를 리스트로 저장 */
   },{
     alt: 'image06',
     source: image06,
-    width: 640,
-    height: 960
+    width: 960,
+    height: 640
   },{
     alt: 'image07',
     source: image07,
