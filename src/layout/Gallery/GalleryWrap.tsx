@@ -10,7 +10,7 @@ const GalleryWrap = () => {
   };
 
   return (
-    <div className="contents-wrap">
+    <div className="gallery-container">
       <div className={`image-more-wrap ${isMoreView ? 'is-more-view' : ''}`}>
         {!isMoreView && <div className="white-gradient-overlay" />}
         <PhotoGallery />
