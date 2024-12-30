@@ -6,8 +6,8 @@ const PhotoGallery = () => {
   const smallItemStyles: React.CSSProperties = {
     cursor: 'pointer', // 클릭 가능하도록 설정
     objectFit: 'contain',
-    width: '180px',
-    height: '280px',
+    width: '150px',
+    height: '380px',
   };
 
   return (
