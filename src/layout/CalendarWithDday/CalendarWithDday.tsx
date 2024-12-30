@@ -1,10 +1,13 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './CalendarWithDday.css';
 
 const CalendarWithDday = () => {
   const weddingDate = new Date('2025-04-12'); // 결혼 날짜
   const today = new Date();
   const [daysLeft, setDaysLeft] = useState(0);
+
+  // 강조할 특정 날짜 (예: 빨간날)
+  const holidays = ['2025-04-06', '2025-04-13','2025-04-20', '2025-04-27']; // yyyy-MM-dd 형식
 
   useEffect(() => {
     const timeDiff = weddingDate.getTime() - today.getTime();
@@ -27,11 +30,14 @@ const CalendarWithDday = () => {
 
     // 날짜 생성
     for (let day = 1; day <= daysInMonth; day++) {
+      const dateString = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
       const isWeddingDay = day === weddingDate.getDate();
+      const isHoliday = holidays.includes(dateString);
+
       calendarDays.push(
         <div
           key={day}
-          className={`calendar-day ${isWeddingDay ? 'highlight' : ''}`}
+          className={`calendar-day ${isWeddingDay ? 'highlight' : ''} ${isHoliday ? 'holiday' : ''}`}
         >
           {day}
         </div>
@@ -50,11 +56,10 @@ const CalendarWithDday = () => {
         <div className="calendar-grid">{generateCalendar()}</div>
       </div>
       <div className="dday-message">
-        💍 D-Day: {daysLeft > 0 ? `D-${daysLeft}` : daysLeft === 0 ? '오늘' : `D+${-daysLeft}`}
+      💍 D-Day: {daysLeft > 0 ? `D-${daysLeft}` : daysLeft === 0 ? '오늘' : `D+${-daysLeft}`}
       </div>
     </div>
   );
 };
 
-     //    김동규 ♥ 황주영 의 결혼식 {daysLeft > 0 ? `${daysLeft}일 전` : daysLeft === 0 ? '오늘' : `${-daysLeft}일 지남`}
 export default CalendarWithDday;

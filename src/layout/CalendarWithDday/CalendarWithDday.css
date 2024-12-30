@@ -41,7 +41,10 @@
 .calendar-day.empty {
   background-color: transparent; /* 빈 셀 배경 없음 */
 }
-
+.calendar-day.holiday {
+  color: red;
+  font-weight: bold;
+}
 .calendar-day.highlight {
   background-color: #9575cd; /* 강조 날짜 배경색 */
   color: white; /* 강조 날짜 글자색 */
@@ -71,7 +74,7 @@
 @media (max-width: 600px) {
   .calendar-container {
     padding: 10px; /* 모바일에서 여백 최소화 */
-    width: 90vw;
+    width: 80vw;
   }
 
   .calendar-grid {

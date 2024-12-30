@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getDatabase } from 'firebase/database';
+import { getFirestore } from 'firebase/firestore';
 
 // TODO: https://firebase.google.com/docs/web/setup?hl=ko
 // 가이드에 따라 firebase config를 설정합니다.
@@ -17,3 +18,4 @@ const firebaseConfig = {
 export const firebaseApp = initializeApp(firebaseConfig);
 
 export const realtimeDb = getDatabase(firebaseApp);
+export const firestoreDb = getFirestore(firebaseApp);

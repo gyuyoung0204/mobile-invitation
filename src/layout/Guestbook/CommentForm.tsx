@@ -10,6 +10,16 @@ const CommentForm = () => {
       alert('이름과 메시지를 채워주세요. 🥹');
     } else {
       e.preventDefault();
+       // TODO: 이름, 메시지, 생성시간, 작성날짜 저장.
+      // const guestbookMessage = {
+      //   sender: name,
+      //   message: message,
+      //   createdAt: serverTimestamp(),
+      //   date: new Date().toLocaleString(),
+      // };
+      // void push(guestbookRef, guestbookMessage);
+      //
+      // alert('메시지를 보냈습니다. 💌');
       setName('');
       setMessage('');
     }
