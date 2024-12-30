@@ -7,7 +7,7 @@ const CalendarWithDday = () => {
   const [daysLeft, setDaysLeft] = useState(0);
 
   // 강조할 특정 날짜 (예: 빨간날)
-  const holidays = ['2025-04-06', '2025-04-13','2025-04-20', '2025-04-27']; // yyyy-MM-dd 형식
+  const holidays = ['2025-04-06', '2025-04-13', '2025-04-20', '2025-04-27']; // yyyy-MM-dd 형식
 
   useEffect(() => {
     const timeDiff = weddingDate.getTime() - today.getTime();
@@ -22,6 +22,16 @@ const CalendarWithDday = () => {
     const daysInMonth = new Date(year, month + 1, 0).getDate(); // 월의 총 일수
 
     const calendarDays = [];
+
+    // 요일 헤더 생성
+    const weekDays = ['일', '월', '화', '수', '목', '금', '토'];
+    weekDays.forEach((day, index) => {
+      calendarDays.push(
+        <div key={`weekday-${index}`} className="calendar-day header">
+          {day}
+        </div>
+      );
+    });
 
     // 빈 칸 생성
     for (let i = 0; i < firstDay; i++) {
@@ -56,7 +66,7 @@ const CalendarWithDday = () => {
         <div className="calendar-grid">{generateCalendar()}</div>
       </div>
       <div className="dday-message">
-      💍 D-Day: {daysLeft > 0 ? `D-${daysLeft}` : daysLeft === 0 ? '오늘' : `D+${-daysLeft}`}
+        💍 D-Day: {daysLeft > 0 ? `D-${daysLeft}` : daysLeft === 0 ? '오늘' : `D+${-daysLeft}`}
       </div>
     </div>
   );
