@@ -21,7 +21,7 @@ function App() {
   const [isVisible, setIsVisible] = useState(false);
   const galleryRef = useRef<HTMLDivElement>(null);
 
-  
+
   useEffect(() => {
     const checkScrollPosition = () => {
       if (galleryRef.current) {
@@ -44,7 +44,8 @@ function App() {
 
   return (
     <NavermapsProvider ncpClientId={ncpClientId}>
-      <FlowerFalling />
+      <FlowerFalling /> 
+     
       <Container>
         <Wrapper>
           <Main />

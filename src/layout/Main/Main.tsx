@@ -71,7 +71,7 @@ const MainTitle = styled.p`
   line-height: 120%;
   font-weight: bold; /* 텍스트를 굵게 강조 */
   white-space: pre-line;
-  margin-top: 20px;
+  margin-top: 0px;
 `;
 
 const SubTitle = styled.p`
