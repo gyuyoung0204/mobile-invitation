@@ -1,11 +1,7 @@
 import styled from '@emotion/styled';
 
 const Container = styled.div`
-border-top: none; /* 위쪽 테두리는 제거 */
-border-left: 30px solid transparent; 
-border-right: 30px solid transparent;
-border-bottom: 30px solid transparent;
-
+border: 30px solid transparent; /* 테두리의 초기 값 설정 */
 border-image-source: url('/background.png');
 border-image-slice: 30% 49%;
 border-image-width: 280px;
@@ -18,4 +14,5 @@ margin: 0 auto;
       width: 500px;
   }
 `;
+
 export default Container;
