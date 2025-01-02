@@ -3,8 +3,10 @@ import { NavermapsProvider } from 'react-naver-maps';
 import styled from '@emotion/styled'; // 추가된 스타일링을 위해 임포트
 import { Heading1 } from '@/components/Text.tsx';
 import Wrapper from '@/components/Wrapper.tsx';
+import MainWrapper from '@/components/MainWrapper.tsx';
 import Account from '@/layout/Account/Account.tsx';
 import Container from '@/layout/Container.tsx';
+import MainContainer from '@/layout/MainContainer.tsx';
 import FloatingBar from '@/layout/FloatingBar/FloatingBar.tsx';
 import GalleryWrap from '@/layout/Gallery/GalleryWrap.tsx';
 import Guestbook from '@/layout/Guestbook/Guestbook.tsx';
@@ -21,7 +23,18 @@ function App() {
   const [isVisible, setIsVisible] = useState(false);
   const galleryRef = useRef<HTMLDivElement>(null);
 
-
+  const OverlayText = styled.div`
+  position: absolute; /* 컨테이너 내부에서 절대 위치 설정 */
+  top: 10%; /* 텍스트의 위쪽 위치 조정 */
+  left: 50%; /* 가운데 정렬 */
+  transform: translate(-50%, -50%); /* 수평, 수직 가운데 정렬 */
+  text-align: center;
+  font-family: 'Times New Roman', serif; /* 클래식 폰트 */
+  color: #2F2120; /* 텍스트 색상 */
+  font-size: 1.5rem; /* 텍스트 크기 */
+  line-height: 1.5; /* 줄 간격 */
+  white-space: pre-line; /* 여러 줄 텍스트 지원 */
+`;
   useEffect(() => {
     const checkScrollPosition = () => {
       if (galleryRef.current) {
@@ -45,11 +58,12 @@ function App() {
   return (
     <NavermapsProvider ncpClientId={ncpClientId}>
       <FlowerFalling /> 
-     
-      <Container>
-        <Wrapper>
+      <MainContainer>
+      <MainWrapper>
           <Main />
-        </Wrapper>
+        </MainWrapper>
+        </MainContainer>
+      <Container>
         <Wrapper>
           <CustomHeading1>모시는 글</CustomHeading1>
           <Invitation />
