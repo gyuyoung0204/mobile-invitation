@@ -23,18 +23,7 @@ function App() {
   const [isVisible, setIsVisible] = useState(false);
   const galleryRef = useRef<HTMLDivElement>(null);
 
-  const OverlayText = styled.div`
-  position: absolute; /* 컨테이너 내부에서 절대 위치 설정 */
-  top: 10%; /* 텍스트의 위쪽 위치 조정 */
-  left: 50%; /* 가운데 정렬 */
-  transform: translate(-50%, -50%); /* 수평, 수직 가운데 정렬 */
-  text-align: center;
-  font-family: 'Times New Roman', serif; /* 클래식 폰트 */
-  color: #2F2120; /* 텍스트 색상 */
-  font-size: 1.5rem; /* 텍스트 크기 */
-  line-height: 1.5; /* 줄 간격 */
-  white-space: pre-line; /* 여러 줄 텍스트 지원 */
-`;
+
   useEffect(() => {
     const checkScrollPosition = () => {
       if (galleryRef.current) {
