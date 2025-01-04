@@ -55,28 +55,35 @@ function App() {
       <Container>
         <Wrapper>
           <CustomHeading1>모시는 글</CustomHeading1>
+  <br /> {/* 헤딩과 내용 사이에 공백 추가 */}
           
           <Invitation />
         </Wrapper>
         <Wrapper>
           <CustomHeading1>안내</CustomHeading1>
+  <br /> {/* 헤딩과 내용 사이에 공백 추가 */}
           <CalendarWithDday />
         </Wrapper>
         <Wrapper ref={galleryRef}>
           <CustomHeading1>Gallery</CustomHeading1>
+  <br /> {/* 헤딩과 내용 사이에 공백 추가 */}
           <GalleryWrap />
         </Wrapper>       
         <Wrapper>
           <CustomHeading1>마음 전하실 곳</CustomHeading1>
+  <br /> {/* 헤딩과 내용 사이에 공백 추가 */}
           <Account />
         </Wrapper>
         <Wrapper>
           <CustomHeading1>오시는 길</CustomHeading1>
+  <br /> {/* 헤딩과 내용 사이에 공백 추가 */}
           <Location />
         </Wrapper>
         <Wrapper>
           <CustomHeading1>신랑 신부에게</CustomHeading1>
+  <br /> {/* 헤딩과 내용 사이에 공백 추가 */}
           <Guestbook /> 
+  <br /> {/* 헤딩과 내용 사이에 공백 추가 */}
             </Wrapper>
           <Wrapper>
          <CustomHeading2>Copyright 2024. GYUDONG. all rights reserved.</CustomHeading2>
