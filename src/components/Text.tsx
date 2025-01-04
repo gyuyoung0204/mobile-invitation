@@ -31,6 +31,13 @@ export const Paragraph = styled.p`
   color: #2F2120;
   white-space: pre-line;
 `;
+export const Paragraph_sub = styled.p`
+  font-family: 'Times New Roman', serif; /* 동일한 클래식 폰트 */
+  line-height: 2.2rem; /* 줄 간격 조정 */;
+  font-weight: bold; /* 문구 굵게 설정 */
+  color: #2F2120;
+  white-space: pre-line;
+`;
 
 export const Caption = styled.p<{ textAlign?: string }>`
   font-family: 'Times New Roman', serif; /* 동일한 폰트 */

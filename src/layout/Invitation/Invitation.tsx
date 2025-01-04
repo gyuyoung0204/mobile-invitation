@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import data from 'data.json';
 import Host from '../Contact/Host.tsx';
 import RoundButton from '@/components/RoundButton.tsx';
-import { Caption, Paragraph } from '@/components/Text.tsx';
+import { Caption, Paragraph,Paragraph_sub } from '@/components/Text.tsx';
 
 const Invitation = () => {
   const { greeting,meeting } = data;
@@ -16,6 +16,7 @@ const Invitation = () => {
   
   return (
     <InvitationWrapper>
+      <Paragraph_sub>{greeting.sub_message}</Paragraph_sub>
       <Paragraph>{greeting.message}</Paragraph>
       <Host />
       <Caption textAlign={'center'}>{meeting.eventDetail}</Caption>
