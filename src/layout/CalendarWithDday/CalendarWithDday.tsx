@@ -67,7 +67,7 @@ const CalendarWithDday = () => {
       </div>
       <div className="dday-message">
         동규와 주영 결혼하기{' '}
-        <span style={{ color: '#B19CD9', fontWeight: 'bold' }}>
+        <span style={{ color: '#9575cd', fontWeight: 'bold' }}>
           {daysLeft > 0 ? `${daysLeft}` : daysLeft === 0 ? '오늘' : `D+${-daysLeft}`}
         </span>{' '}
         일 전💍
