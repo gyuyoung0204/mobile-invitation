@@ -55,6 +55,7 @@ function App() {
       <Container>
         <Wrapper>
           <CustomHeading1>모시는 글</CustomHeading1>
+          
           <Invitation />
         </Wrapper>
         <Wrapper>
