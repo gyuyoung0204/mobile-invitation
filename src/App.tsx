@@ -93,6 +93,7 @@ export default App;
 
 const CustomHeading1 = styled(Heading1)`
   font-family: 'Times New Roman', serif; /* 클래식 폰트로 변경 */
+  font-size: 2.0rem; /* 텍스트 크기 조정 */
 `;
 const CustomHeading2 = styled(Heading1)`
 font-family: 'Times New Roman', serif; /* 동일한 클래식 폰트 */
