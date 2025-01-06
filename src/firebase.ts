@@ -4,13 +4,14 @@ import { getDatabase } from 'firebase/database';
 // TODO: https://firebase.google.com/docs/web/setup?hl=ko
 // 가이드에 따라 firebase config를 설정합니다.
 const firebaseConfig = {
-    apiKey: "AIzaSyBKG0duVC-eE2HSzUIyQC0qZEwW8UgBYBk",
-    authDomain: "gyuyoung0204.firebaseapp.com",
-    projectId: "gyuyoung0204",
-    storageBucket: "https://gyuyoung0204-default-rtdb.asia-southeast1.firebasedatabase.app/",
-    messagingSenderId: "1081777785610",
-    appId: "1:1081777785610:web:3b084d70c9ec204d6908f3",
-    measurementId: "G-01HE3Q1PN5"
+  apiKey: "AIzaSyBKG0duVC-eE2HSzUIyQC0qZEwW8UgBYBk",
+  authDomain: "gyuyoung0204.firebaseapp.com",
+  databaseURL: "https://gyuyoung0204-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "gyuyoung0204",
+  storageBucket: "gyuyoung0204.firebasestorage.app",
+  messagingSenderId: "1081777785610",
+  appId: "1:1081777785610:web:3b084d70c9ec204d6908f3",
+  measurementId: "G-01HE3Q1PN5"
   };
   
 

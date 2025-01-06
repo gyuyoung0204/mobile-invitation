@@ -86,7 +86,7 @@ function App() {
   <br /> {/* 헤딩과 내용 사이에 공백 추가 */}
             </Wrapper>
           <Wrapper>
-         <CustomHeading2>Copyright 2024. GYUDONG. all rights reserved.</CustomHeading2>
+         <CustomHeading2>Copyright 2025. DONGGYU_KIM. all rights reserved.</CustomHeading2>
         </Wrapper>
         
         <FloatingBar isVisible={isVisible} />

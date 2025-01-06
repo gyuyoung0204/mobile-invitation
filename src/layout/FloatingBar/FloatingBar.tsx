@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import data from 'data.json';
  import { increment, onValue, ref, update } from 'firebase/database';
  import { realtimeDb } from 'firebase.ts';
+ import { uid } from "uid";
 import JSConfetti from 'js-confetti';
 import Heart from '@/assets/icons/heart_plus.svg?react';
 import Share from '@/assets/icons/share.svg?react';
