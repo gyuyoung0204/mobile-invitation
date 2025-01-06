@@ -1,5 +1,10 @@
 import { useState } from 'react';
 import styled from '@emotion/styled';
+ import { push, ref, serverTimestamp } from 'firebase/database';
+ import { realtimeDb } from '../../firebase.ts';
+
+
+ const guestbookRef = ref(realtimeDb, 'guestbook');
 
 const CommentForm = () => {
   const [name, setName] = useState<string>('');
@@ -10,16 +15,16 @@ const CommentForm = () => {
       alert('이름과 메시지를 채워주세요. 🥹');
     } else {
       e.preventDefault();
-       // TODO: 이름, 메시지, 생성시간, 작성날짜 저장.
-      // const guestbookMessage = {
-      //   sender: name,
-      //   message: message,
-      //   createdAt: serverTimestamp(),
-      //   date: new Date().toLocaleString(),
-      // };
-      // void push(guestbookRef, guestbookMessage);
-      //
-      // alert('메시지를 보냈습니다. 💌');
+        // TODO: 이름, 메시지, 생성시간, 작성날짜 저장.
+       const guestbookMessage = {
+         sender: name,
+         message: message,
+         createdAt: serverTimestamp(),
+         date: new Date().toLocaleString(),
+       };
+       void push(guestbookRef, guestbookMessage);
+      
+       alert('메시지를 보냈습니다. 💌');
       setName('');
       setMessage('');
     }
