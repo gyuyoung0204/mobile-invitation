@@ -25,10 +25,17 @@ const GuestListForm = () => {
       // 중복된 데이터 방지
       if (id && !loadedKeys.has(id)) {
         setLoadedKeys((prevKeys: Set<string>) => new Set(prevKeys).add(id));
-        setMessages((prevMessages: GuestbookMessage[]) => [
-          ...prevMessages,
-          { id, ...data },
-        ]);
+        setMessages((prevMessages: GuestbookMessage[]) => {
+          const newMessages = [
+            ...prevMessages,
+            { id, ...data },
+          ];
+
+          // 날짜 순으로 정렬
+          return newMessages.sort((a, b) =>
+            new Date(b.date).getTime() - new Date(a.date).getTime()
+          );
+        });
       }
     });
 
