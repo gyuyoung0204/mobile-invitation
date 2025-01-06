@@ -91,16 +91,16 @@
   /* 모바일 스타일 */
   @media (max-width: 768px) {
     .wrapper {
-      padding: 15px 0; /* 내부 여백 확대 */
+      padding: 12px 0; /* 내부 여백 확대 */
     }
   
     .relation,
     .name {
-      font-size: 1.4rem; /* 모바일에서 폰트 크기 더 확대 */
+      font-size: 1.3rem; /* 모바일에서 폰트 크기 더 확대 */
     }
   
     .details {
-      font-size: 1.3rem; /* 모바일에서 폰트 크기 더 확대 */
+      font-size: 1.1rem; /* 모바일에서 폰트 크기 더 확대 */
     }
   
     .copy-button {
