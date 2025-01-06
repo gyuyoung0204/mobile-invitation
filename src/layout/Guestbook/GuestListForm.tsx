@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ref, onChildAdded } from 'firebase/database';
 import { realtimeDb } from '../../firebase.ts';
 import styled from '@emotion/styled';
-import { Heading2 } from '@/components/Text.tsx';
 
 interface GuestbookMessage {
   id: string;
@@ -25,8 +24,11 @@ const GuestListForm = () => {
 
       // 중복된 데이터 방지
       if (id && !loadedKeys.has(id)) {
-        setLoadedKeys((prevKeys) => new Set(prevKeys).add(id));
-        setMessages((prevMessages) => [...prevMessages, { id, ...data }]);
+        setLoadedKeys((prevKeys: Set<string>) => new Set(prevKeys).add(id));
+        setMessages((prevMessages: GuestbookMessage[]) => [
+          ...prevMessages,
+          { id, ...data },
+        ]);
       }
     });
 
@@ -37,7 +39,7 @@ const GuestListForm = () => {
   return (
     <GuestbookWrapper>
       {messages.length > 0 ? (
-        messages.map((msg) => (
+        messages.map((msg: GuestbookMessage) => (
           <MessageItem key={msg.id}>
             <Sender>{msg.sender}</Sender>
             <MessageText>{msg.message}</MessageText>
@@ -55,14 +57,14 @@ export default GuestListForm;
 
 // 스타일 정의
 const GuestbookWrapper = styled.div`
-display: flex;
-flex-direction: column;
-gap: 10px; /* 입력 필드 간 간격 증가 */
-align-items: center;
-width: 100%; /* 전체 화면 너비에 맞춤 */
-max-width: 600px; /* 데스크톱에서 최대 너비 제한 */
-margin: 0 auto; /* 가운데 정렬 */
-box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* 입력 필드 간 간격 증가 */
+  align-items: center;
+  width: 100%; /* 전체 화면 너비에 맞춤 */
+  max-width: 600px; /* 데스크톱에서 최대 너비 제한 */
+  margin: 0 auto; /* 가운데 정렬 */
+  box-sizing: border-box;
 `;
 
 const MessageItem = styled.div`
