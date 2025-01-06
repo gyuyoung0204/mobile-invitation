@@ -74,6 +74,66 @@ const images = [   /* 이미지 경로를 리스트로 저장 */
     source: image12,
     width: 640,
     height: 960
+  },{
+    alt: 'image13',
+    source: image12,
+    width: 640,
+    height: 960
+  },{
+    alt: 'image14',
+    source: image12,
+    width: 640,
+    height: 960
+  },{
+    alt: 'image15',
+    source: image12,
+    width: 640,
+    height: 960
+  },{
+    alt: 'image16',
+    source: image12,
+    width: 640,
+    height: 960
+  },{
+    alt: 'image17',
+    source: image12,
+    width: 640,
+    height: 960
+  },{
+    alt: 'image18',
+    source: image12,
+    width: 640,
+    height: 960
+  },{
+    alt: 'image19',
+    source: image12,
+    width: 640,
+    height: 960
+  },{
+    alt: 'image20',
+    source: image12,
+    width: 640,
+    height: 960
+  },{
+    alt: 'image21',
+    source: image12,
+    width: 640,
+    height: 960
+  },{
+    alt: 'image22',
+    source: image12,
+    width: 640,
+    height: 960
+  },{
+    alt: 'image23',
+    source: image12,
+    width: 640,
+    height: 960
+  },{
+    alt: 'image24',
+    source: image12,
+    width: 640,
+    height: 960
   }
 ];
 

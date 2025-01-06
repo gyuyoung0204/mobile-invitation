@@ -96,11 +96,11 @@
   
     .relation,
     .name {
-      font-size: 1.3rem; /* 모바일에서 폰트 크기 더 확대 */
+      font-size: 1.1rem; /* 모바일에서 폰트 크기 더 확대 */
     }
   
     .details {
-      font-size: 1.1rem; /* 모바일에서 폰트 크기 더 확대 */
+      font-size: 0.8rem; /* 모바일에서 폰트 크기 더 확대 */
     }
   
     .copy-button {

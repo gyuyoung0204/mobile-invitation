@@ -66,7 +66,7 @@ const CalendarWithDday = () => {
         <div className="calendar-grid">{generateCalendar()}</div>
       </div>
       <div className="dday-message">
-        동규와 주영 결혼하기{' '}
+        동규와 주영이의 결혼식{' '}
         <span style={{ color: '#9575cd', fontWeight: 'bold' }}>
           {daysLeft > 0 ? `${daysLeft}` : daysLeft === 0 ? '오늘' : `D+${-daysLeft}`}
         </span>{' '}
