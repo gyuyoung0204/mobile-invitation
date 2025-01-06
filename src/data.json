@@ -67,8 +67,8 @@
         {
           "name": "황주영",
           "relation": "신부",
-          "bank": "토스뱅크",
-          "account": "1234-5678-9012",
+          "bank": "농협",
+          "account": "302-1423-5999-11",
           "kakaopayAccount": "",
           "tossAccount": ""
         },
@@ -82,7 +82,7 @@
           "name": "허정란",
           "relation": "어머니",
           "bank": "농협",
-          "account": "123-45-678901"
+          "account": "302-0598-4163-81"
         }
       ]
     }
