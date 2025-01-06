@@ -42,8 +42,8 @@
         {
           "name": "김동규",
           "relation": "신랑",
-          "bank": "카카오뱅크",
-          "account": "1234-56-789012",
+          "bank": "하나은행",
+          "account": "593-910313-45707",
           "kakaopayAccount": "",
           "tossAccount": ""
         },
@@ -51,13 +51,13 @@
           "name": "김형우",
           "relation": "아버지",
           "bank": "농협",
-          "account": "123-45-678901"
+          "account": "705080~52~082430"
         },
         {
           "name": "류갑숙",
           "relation": "어머니",
           "bank": "농협",
-          "account": "123-45-678901"
+          "account": "705080-52-125601"
         }
       ]
     },

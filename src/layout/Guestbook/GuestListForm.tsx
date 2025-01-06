@@ -33,7 +33,7 @@ const GuestListForm = () => {
 
           // 날짜 순으로 정렬
           return newMessages.sort((a, b) =>
-            new Date(b.date).getTime() - new Date(a.date).getTime()
+            new Date(a.date).getTime() - new Date(b.date).getTime()
           );
         });
       }
