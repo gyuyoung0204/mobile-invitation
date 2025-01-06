@@ -16,6 +16,7 @@ import Main from '@/layout/Main/Main.tsx';
 import FlowerFalling from '@/layout/FlowerFalling/FlowerFalling.tsx';
 // import MusicPlayer from '@/layout/MusicPlayer/MusicPlayer.tsx';
 import CalendarWithDday from '@/layout/CalendarWithDday/CalendarWithDday.tsx';
+import GuestList from './layout/Guestbook/GuestList';
 
 
 function App() {
@@ -85,7 +86,15 @@ function App() {
           <Guestbook /> 
   <br /> {/* 헤딩과 내용 사이에 공백 추가 */}
             </Wrapper>
+
+            <Wrapper>
+          <CustomHeading1>방명록</CustomHeading1>
+  <br /> {/* 헤딩과 내용 사이에 공백 추가 */}
+          <GuestList /> 
+  <br /> {/* 헤딩과 내용 사이에 공백 추가 */}
+            </Wrapper>
           <Wrapper>
+            
          <CustomHeading2>Copyright 2025. DONGGYU_KIM. all rights reserved.</CustomHeading2>
         </Wrapper>
         
