@@ -1,6 +1,6 @@
 .music-player {
   position: fixed;
-  bottom: 20px; /* 화면 아래쪽에서 20px */
+  top: 20px; /* 화면 아래쪽에서 20px */
   right: 20px; /* 화면 오른쪽에서 20px */
   z-index: 999; /* 다른 요소 위에 표시 */
 }
