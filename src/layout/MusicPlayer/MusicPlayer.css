@@ -4,6 +4,7 @@
   right: 20px;
   z-index: 999; /* 다른 요소 위에 표시 */
 }
+
 .music-toggle {
   background-color: rgba(255, 255, 255, 0.8); /* 반투명 흰색 배경 */
   border: none;
@@ -17,5 +18,5 @@
 }
 
 .music-toggle:hover {
-  background-color: rgba(255, 182, 193, 0.9); /* 벚꽃 색상 */
+  background-color: rgba(255, 255, 200, 0.9); /* 연노랑 색상 */
 }
