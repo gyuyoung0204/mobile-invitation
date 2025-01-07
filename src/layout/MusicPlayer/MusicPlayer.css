@@ -23,3 +23,10 @@
 .music-toggle:hover {
   background-color: rgba(200, 200, 250, 0.9); /* 연보라 호버 색상 */
 }
+@media (max-width: 768px) {
+  .music-toggle {
+    width: 50px; /* 모바일에서 크기 줄이기 */
+    height: 50px;
+    font-size: 24px; /* 이모티콘 크기 줄이기 */
+  }
+}
