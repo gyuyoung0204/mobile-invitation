@@ -25,8 +25,8 @@
 }
 @media (max-width: 768px) {
   .music-toggle {
-    width: 50px; /* 모바일에서 크기 줄이기 */
-    height: 50px;
-    font-size: 24px; /* 이모티콘 크기 줄이기 */
+    width: 40px; /* 모바일에서 크기 줄이기 */
+    height: 40px;
+    font-size: 20px; /* 이모티콘 크기 줄이기 */
   }
 }
