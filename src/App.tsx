@@ -48,9 +48,11 @@ function App() {
   return (
     <NavermapsProvider ncpClientId={ncpClientId}>
       <FlowerFalling />
-      <MusicPlayer />  
       <MainContainer>
+        
       <MainWrapper>
+      <MusicPlayer />  
+    
           <Main />
         </MainWrapper>
         </MainContainer>
