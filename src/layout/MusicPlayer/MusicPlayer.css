@@ -1,6 +1,6 @@
 .music-player {
   position: fixed;
-  bottom: 20px; /* 화면 아래쪽에서 20px */
+  top: 20px; /* 화면 아래쪽에서 20px */
   right: 20px; /* 화면 오른쪽에서 20px */
   z-index: 999; /* 다른 요소 위에 표시 */
 }
@@ -12,9 +12,9 @@
   background-color: rgba(230, 230, 250, 0.8); /* 연보라 배경 */
   border: none;
   border-radius: 50%; /* 원형 버튼 */
-  width: 60px; /* 버튼 크기를 약간 키움 */
-  height: 60px;
-  font-size: 28px; /* 이모티콘 크기 조정 */
+  width: 50px; /* 버튼 크기를 약간 키움 */
+  height: 50px;
+  font-size: 23px; /* 이모티콘 크기 조정 */
   cursor: pointer;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* 그림자 */
   transition: background-color 0.3s ease; /* 호버 색상 변경 애니메이션 */
