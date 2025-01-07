@@ -26,7 +26,7 @@ const MusicPlayer = () => {
         오디오 재생을 지원하지 않는 브라우저입니다.
       </audio>
       <button className="music-toggle" onClick={togglePlay}>
-        {isPlaying ? '⏸️' : '🎵'}
+        {isPlaying ? '❚❚' : '🎵'}
       </button>
     </div>
   );
