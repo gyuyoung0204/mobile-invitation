@@ -1,5 +1,15 @@
 import { useEffect, useState } from 'react';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 import './CalendarWithDday.css';
+
+// AOS 초기화
+AOS.init({
+  duration: 1500, // 애니메이션 지속 시간
+  offset: 100,    // 애니메이션 시작 위치
+  easing: 'ease-in-out', // 부드러운 애니메이션
+  once: true,     // 애니메이션 한 번만 실행
+});
 
 const CalendarWithDday = () => {
   const weddingDate = new Date('2025-04-12'); // 결혼 날짜
@@ -27,7 +37,12 @@ const CalendarWithDday = () => {
     const weekDays = ['일', '월', '화', '수', '목', '금', '토'];
     weekDays.forEach((day, index) => {
       calendarDays.push(
-        <div key={`weekday-${index}`} className="calendar-day header">
+        <div
+          key={`weekday-${index}`}
+          className="calendar-day header"
+          data-aos="fade-up"
+          data-aos-delay="0"
+        >
           {day}
         </div>
       );
@@ -35,7 +50,14 @@ const CalendarWithDday = () => {
 
     // 빈 칸 생성
     for (let i = 0; i < firstDay; i++) {
-      calendarDays.push(<div key={`empty-${i}`} className="calendar-day empty"></div>);
+      calendarDays.push(
+        <div
+          key={`empty-${i}`}
+          className="calendar-day empty"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        ></div>
+      );
     }
 
     // 날짜 생성
@@ -48,6 +70,8 @@ const CalendarWithDday = () => {
         <div
           key={day}
           className={`calendar-day ${isWeddingDay ? 'highlight' : ''} ${isHoliday ? 'holiday' : ''}`}
+          data-aos="fade-up"
+          data-aos-delay={`${200 + day * 10}`} // 날짜마다 지연 시간 증가
         >
           {day}
         </div>
@@ -58,14 +82,22 @@ const CalendarWithDday = () => {
   };
 
   return (
-    <div className="calendar-container">
+    <div className="calendar-container" data-aos="fade-up" data-aos-delay="0">
       <div className="calendar">
-        <div className="month-title">
+        <div
+          className="month-title"
+          data-aos="fade-down"
+          data-aos-delay="0"
+        >
           {weddingDate.toLocaleString('ko-KR', { month: 'long', year: 'numeric' })}
         </div>
         <div className="calendar-grid">{generateCalendar()}</div>
       </div>
-      <div className="dday-message">
+      <div
+        className="dday-message"
+        data-aos="zoom-in"
+        data-aos-delay="500"
+      >
         동규와 주영이의 결혼식{' '}
         <span style={{ color: '#9575cd', fontWeight: 'bold' }}>
           {daysLeft > 0 ? `${daysLeft}` : daysLeft === 0 ? '오늘' : `D+${-daysLeft}`}

@@ -17,6 +17,7 @@ import FlowerFalling from '@/layout/FlowerFalling/FlowerFalling.tsx';
 // import MusicPlayer from '@/layout/MusicPlayer/MusicPlayer.tsx';
 import CalendarWithDday from '@/layout/CalendarWithDday/CalendarWithDday.tsx';
 import GuestList from './layout/Guestbook/GuestList';
+import Song from "@/assets/song.mp3";
 
 
 function App() {
@@ -48,6 +49,9 @@ function App() {
   return (
     <NavermapsProvider ncpClientId={ncpClientId}>
       <FlowerFalling /> 
+      <audio autoPlay loop>
+        <source src={Song} />
+      </audio>
       <MainContainer>
       <MainWrapper>
           <Main />

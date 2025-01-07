@@ -1,17 +1,31 @@
 import styled from '@emotion/styled';
 import data from 'data.json';
 import mainImg from '@/assets/images/05.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+// AOS 초기화
+AOS.init({
+  duration: 1500, // 애니메이션 지속 시간 (ms)
+  offset: 100,    // 애니메이션 시작 위치 (px)
+  easing: 'ease-in-out', // 부드러운 애니메이션
+  once: true,     // 애니메이션 한 번만 실행
+});
 
 const Main = () => {
   const { greeting } = data;
   return (
     <Wrapper>
-      <MainImgWrapper>
+      <MainImgWrapper data-aos="fade-up" data-aos-delay="0"> {/* 즉시 실행 */}
         <MainImg src={mainImg} />
         <FadeOutGradient />
       </MainImgWrapper>
-      <MainTitle>{greeting.title}</MainTitle>
-      <SubTitle>{greeting.eventDetail}</SubTitle>
+      <MainTitle data-aos="fade-up" data-aos-delay="300"> {/* 300ms 지연 */}
+        {greeting.title}
+      </MainTitle>
+      <SubTitle data-aos="fade-up" data-aos-delay="600"> {/* 600ms 지연 */}
+        {greeting.eventDetail}
+      </SubTitle>
     </Wrapper>
   );
 };
@@ -26,14 +40,14 @@ const Wrapper = styled.div`
 
 const MainImgWrapper = styled.div`
   position: relative;
-  width: 127.2%; /* 기본값 */
+  width: 127.2%;
   height: 100%;
   border-radius: 0;
   overflow: hidden;
 
   @media (max-width: 768px) {
-    width: 100vw; /* 모바일에서 너비는 뷰포트 가득 */
-    height: 100vh; /* 높이도 뷰포트 가득 */
+    width: 100vw;
+    height: 100vh;
   }
 `;
 
@@ -43,7 +57,7 @@ const MainImg = styled.img`
   object-fit: cover;
 
   @media (max-width: 768px) {
-    height: 100%; /* 모바일에서 이미지 높이도 가득 */
+    height: 100%;
   }
 `;
 
@@ -52,33 +66,32 @@ const FadeOutGradient = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  height: 30%; /* 그라데이션 높이 */
+  height: 30%;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-  pointer-events: none; /* 그라데이션이 클릭되지 않도록 설정 */
+  pointer-events: none;
 
-  /* 모바일에서 그라데이션 수정 */
   @media (max-width: 768px) {
-    height: 40%; /* 모바일에서 높이를 더 키움 */
+    height: 40%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-    pointer-events: none; /* 그라데이션이 클릭되지 않도록 설정 */
+    pointer-events: none;
   }
 `;
 
 const MainTitle = styled.p`
-  font-family: 'Times New Roman', serif; /* 클래식 폰트 적용 */
+  font-family: 'Times New Roman', serif;
   font-size: 2rem;
-  color: #2F2120; /* 기존 색상 유지 */
+  color: #2F2120;
   line-height: 120%;
-  font-weight: bold; /* 텍스트를 굵게 강조 */
+  font-weight: bold;
   white-space: pre-line;
   margin-top: 0px;
 `;
 
 const SubTitle = styled.p`
-  font-family: 'Times New Roman', serif; /* 동일한 폰트 */
+  font-family: 'Times New Roman', serif;
   font-size: 1.1rem;
-  color: #2F2120; /* 기존 색상 유지 */
-  font-weight: bold; /* 텍스트를 굵게 강조 */
+  color: #2F2120;
+  font-weight: bold;
   line-height: 140%;
   white-space: pre-line;
 `;
