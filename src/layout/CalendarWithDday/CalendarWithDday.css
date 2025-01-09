@@ -95,7 +95,7 @@
   .calendar-day {
     width: 40px; /* 모바일에서 셀 크기 더 작게 */
     height: 40px;
-    font-size: 12px; /* 폰트 크기 더 작게 */
+    font-size: 14px; /* 폰트 크기 더 작게 */
   }
 
 
