@@ -106,4 +106,6 @@ const SubmitButton = styled.button`
     font-size: 1.1rem; /* 모바일에서 폰트 크기 증가 */
     padding: 14px; /* 모바일에서 패딩 증가 */
   }
+
+  
 `;
