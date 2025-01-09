@@ -100,4 +100,5 @@ const SubTitle = styled.p`
   font-weight: bold;
   line-height: 140%;
   white-space: pre-line;
+  margin-top: 0px;
 `;
