@@ -48,7 +48,7 @@ const MainImgWrapper = styled.div`
 
   @media (max-width: 768px) {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     margin-bottom: 0px; /* 현재 공백 제거 */
   }
 `;
