@@ -63,12 +63,6 @@ const AccordionHeader = styled.div<{ isActive: boolean }>`
     transform: ${(props) => (props.isActive ? 'rotate(180deg)' : undefined)};
   }
 
-  @media (max-width: 600px) {
-    padding: 10px 20px; /* 패딩 확대 */
-    & > p {
-      font-size: 18px; /* 모바일에서 텍스트 크기 증가 */
-    }
-  }
 `;
 
 const AccordionContent = styled.div`
