@@ -6,7 +6,6 @@ import MapButtons from './MapButtons.tsx';
 import { Caption } from '@/components/Text.tsx';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
-import { useState } from 'react';
 import location_map from '@/assets/location.png'; // 약도 이미지 경로
 
 // AOS 초기화
@@ -19,14 +18,11 @@ AOS.init({
 
 const Location = () => {
   const { mapInfo } = data;
-  const [isCopied, setIsCopied] = useState(false); // 복사 상태 관리
 
   const handleCopy = () => {
     navigator.clipboard.writeText(mapInfo.address2)
       .then(() => {
-        setIsCopied(true);
         alert('주소가 복사되었습니다. 😊');
-        setTimeout(() => setIsCopied(false), 2000); // 2초 후 상태 초기화
       })
       .catch((error) => {
         alert('주소 복사에 실패했습니다. 🥲');
