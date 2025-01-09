@@ -109,7 +109,7 @@
     }
   
     .account-links {
-      gap: 12px; /* 모바일에서 간격 확대 */
+      gap: 5px; /* 모바일에서 간격 확대 */
     }
   
     .kakaopay-img {
