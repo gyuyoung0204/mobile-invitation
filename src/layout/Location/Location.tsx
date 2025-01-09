@@ -89,7 +89,7 @@ const Location = () => {
           onClick={handleCopy} 
           aria-label="주소 복사"
         >
-          {isCopied ? '복사 완료!' : '주소 복사'}
+          주소 복사
         </button>
         <button 
           className="map-button" 
