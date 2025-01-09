@@ -49,6 +49,7 @@ const MainImgWrapper = styled.div`
   @media (max-width: 768px) {
     width: 100vw;
     height: 100vh;
+    margin-bottom: 0px; /* 현재 공백 제거 */
   }
 `;
 
@@ -89,7 +90,7 @@ const MainTitle = styled.p`
   line-height: 120%;
   font-weight: bold;
   white-space: pre-line;
-  margin-top: 20px;
+  margin-top: 0px;
 
   @media (max-width: 768px) {
   
