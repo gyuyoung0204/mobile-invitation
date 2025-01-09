@@ -44,6 +44,7 @@ const MainImgWrapper = styled.div`
   height: 100%;
   border-radius: 0;
   overflow: hidden;
+  margin-bottom: 0px; /* 현재 공백 제거 */
 
   @media (max-width: 768px) {
     width: 100vw;
@@ -54,12 +55,13 @@ const MainImgWrapper = styled.div`
 const MainImg = styled.img`
   width: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: contain; /* 원본 비율 유지 */
 
   @media (max-width: 768px) {
     width: 100%;
     height: auto; /* 비율 유지 */
     object-fit: contain; /* 원본 비율 유지 */
+    margin-bottom: 0px; /* 현재 공백 제거 */
   }
 `;
 

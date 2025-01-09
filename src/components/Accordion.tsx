@@ -71,8 +71,5 @@ const AccordionContent = styled.div`
   padding: 10px 20px;
   background-color: #ffffff ;
 
-  @media (max-width: 600px) {
-    font-size: 16px; /* 모바일에서 글자 크기 증가 */
-    padding: 15px 25px; /* 패딩 확대 */
-  }
+
 `;
