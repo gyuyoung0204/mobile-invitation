@@ -57,10 +57,9 @@ const MainImg = styled.img`
   object-fit: cover;
 
   @media (max-width: 768px) {
-    height: 100%;
     width: 100%;
-    display: block;
-    object-fit: cover;
+    height: auto; /* 비율 유지 */
+    object-fit: contain; /* 원본 비율 유지 */
   }
 `;
 
