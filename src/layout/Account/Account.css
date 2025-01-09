@@ -100,11 +100,11 @@
     }
   
     .details {
-      font-size: 1.0rem; /* 모바일에서 폰트 크기 더 확대 */
+      font-size: 0.9rem; /* 모바일에서 폰트 크기 더 확대 */
     }
   
     .copy-button {
-      padding: 6px 2px; /* 모바일에서 버튼 크기 축소 */
+      padding: 2px 2px; /* 모바일에서 버튼 크기 축소 */
       font-size: 0.9rem; /* 모바일에서 버튼 글자 크기 축소 */
     }
   
