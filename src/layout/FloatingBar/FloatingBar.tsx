@@ -72,6 +72,8 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
 export default FloatingBar;
 
 const Nav = styled.nav<{ isVisible: boolean }>`
+
+font-family: 'Times New Roman', serif; /* 폰트 변경 */
   min-width: 280px;
   position: fixed;
   bottom: 30px;

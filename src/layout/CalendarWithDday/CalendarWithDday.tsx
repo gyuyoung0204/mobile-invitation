@@ -98,7 +98,7 @@ const CalendarWithDday = () => {
         </div>
       </div>
        {/* 컨테이너 밖으로 D-Day 메시지 이동 */}
-       <div
+      <div
         className="dday-message"
         data-aos="zoom-in"
         data-aos-delay="500"

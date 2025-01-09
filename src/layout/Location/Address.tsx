@@ -40,6 +40,7 @@ export default Address;
 const WayWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  font-family: 'Times New Roman', serif; /* 폰트 변경 */
   align-items: flex-start;
   margin: 20px 0px;
   gap: 20px;
@@ -47,6 +48,7 @@ const WayWrapper = styled.div`
 
 const Way = styled.div`
   display: flex;
+  font-family: 'Times New Roman', serif; /* 폰트 변경 */
   flex-direction: column;
   text-align: left;
 `;

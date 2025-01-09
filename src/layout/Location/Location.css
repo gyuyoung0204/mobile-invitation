@@ -19,6 +19,7 @@
     box-sizing: border-box; /* 패딩 포함 계산 */
     border-radius: 8px; /* 약간 둥근 모서리 추가 */
     overflow: hidden; /* 콘텐츠가 컨테이너를 넘지 않도록 제한 */
+    font-family: 'Times New Roman', serif; /* 폰트 변경 */
   }
   
   @media (max-width: 768px) {

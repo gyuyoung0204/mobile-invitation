@@ -56,4 +56,5 @@ const InvitationWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  font-family: 'Times New Roman', serif; /* 폰트 변경 */
 `;
