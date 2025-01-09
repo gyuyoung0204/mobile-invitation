@@ -58,6 +58,7 @@ const MainImg = styled.img`
 
   @media (max-width: 768px) {
     height: 100%;
+    width: 100%;
   }
 `;
 
