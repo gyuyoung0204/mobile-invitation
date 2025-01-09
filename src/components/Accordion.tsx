@@ -63,5 +63,5 @@ const AccordionContent = styled.div`
   font-size: 14px;
   text-align: justify;
   padding: 10px 20px;
-  background-color: #d1c4e9 ;
+  background-color: #ffffff ;
 `;
