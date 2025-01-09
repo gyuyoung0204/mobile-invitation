@@ -27,7 +27,7 @@ export const PointTitle = styled.p`
 
 export const Paragraph = styled.p`
   font-family: 'Times New Roman', serif; /* 동일한 클래식 폰트 */
-  line-height: 2.2rem; /* 줄 간격 조정 */;
+  line-height: 2.0rem; /* 줄 간격 조정 */;
   color: #2F2120;
   white-space: pre-line;
 `;
