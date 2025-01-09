@@ -46,8 +46,8 @@ const MainImgWrapper = styled.div`
   overflow: hidden;
 
   @media (max-width: 768px) {
-    width: 90vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
   }
 `;
 
