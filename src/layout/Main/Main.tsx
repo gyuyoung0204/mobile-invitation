@@ -89,8 +89,12 @@ const MainTitle = styled.p`
   line-height: 120%;
   font-weight: bold;
   white-space: pre-line;
-  margin-top: 0px;
-  margin-bottom: 0px; /* 현재 공백 제거 */
+  margin-top: 20px;
+
+  @media (max-width: 768px) {
+  
+    margin-top: 0px;
+  }
 `;
 
 const SubTitle = styled.p`
