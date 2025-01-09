@@ -44,7 +44,7 @@ const MainImgWrapper = styled.div`
   height: 100%;
   border-radius: 0;
   overflow: hidden;
-  margin-bottom: 0px; /* 현재 공백 제거 */
+  margin-bottom: 20px; /* 현재 공백 제거 */
 
   @media (max-width: 768px) {
     width: 100vw;
