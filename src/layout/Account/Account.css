@@ -100,12 +100,12 @@
     }
   
     .details {
-      font-size: 1.0rem; /* 모바일에서 폰트 크기 더 확대 */
+      font-size: 0.9rem; /* 모바일에서 폰트 크기 더 확대 */
     }
   
     .copy-button {
-      padding: 8px 10px; /* 모바일에서 버튼 크기 확대 */
-      font-size: 1.0rem; /* 모바일에서 버튼 글자 크기 확대 */
+      padding: 10px 8px; /* 모바일에서 버튼 크기 확대 */
+      font-size: 1.2rem; /* 모바일에서 버튼 글자 크기 확대 */
     }
   
     .account-links {
