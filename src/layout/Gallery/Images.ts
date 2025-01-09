@@ -25,9 +25,6 @@ import image24 from '@/assets/images/24.jpg'
 import image25 from '@/assets/images/25.jpg'
 import image26 from '@/assets/images/26.jpg'
 import image27 from '@/assets/images/27.jpg'
-import image28 from '@/assets/images/28.jpg'
-import image29 from '@/assets/images/29.jpg'
-import image30 from '@/assets/images/30.jpg'
 
 
 const images = [   /* 이미지 경로를 리스트로 저장 */
@@ -96,8 +93,8 @@ const images = [   /* 이미지 경로를 리스트로 저장 */
   },{
     alt: 'image13',
     source: image13,
-    width: 640,
-    height: 960
+    width: 960,
+    height: 640
   },{
     alt: 'image14',
     source: image14,
@@ -131,33 +128,33 @@ const images = [   /* 이미지 경로를 리스트로 저장 */
   },{
     alt: 'image20',
     source: image20,
-    width: 640,
-    height: 960
+    width: 960,
+    height: 640
   },{
     alt: 'image21',
     source: image21,
-    width: 960,
-    height: 640
+    width: 640,
+    height: 960
   },{
     alt: 'image22',
     source: image22,
-    width: 960,
-    height: 640
+    width: 640,
+    height: 960
   },{
     alt: 'image23',
     source: image23,
-    width: 640,
-    height: 960
+    width: 960,
+    height: 640
   },{
     alt: 'image24',
     source: image24,
-    width: 640,
-    height: 960
+    width: 960,
+    height: 640
   },{
     alt: 'image25',
     source: image25,
-    width: 640,
-    height: 960
+    width: 960,
+    height: 640
   },{
     alt: 'image26',
     source: image26,
@@ -168,21 +165,6 @@ const images = [   /* 이미지 경로를 리스트로 저장 */
     source: image27,
     width: 640,
     height: 960
-  },{
-    alt: 'image28',
-    source: image28,
-    width: 640,
-    height: 960
-  },{
-    alt: 'image29',
-    source: image29,
-    width: 960,
-    height: 640
-  },{
-    alt: 'image30',
-    source: image30,
-    width: 960,
-    height: 640
   }
 ];
 
