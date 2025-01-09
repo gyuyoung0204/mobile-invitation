@@ -78,6 +78,7 @@ const FadeOutGradient = styled.div`
     height: 40%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
     pointer-events: none;
+    margin-bottom: 0px; /* 현재 공백 제거 */
   }
 `;
 
@@ -89,6 +90,7 @@ const MainTitle = styled.p`
   font-weight: bold;
   white-space: pre-line;
   margin-top: 0px;
+  margin-bottom: 0px; /* 현재 공백 제거 */
 `;
 
 const SubTitle = styled.p`
