@@ -82,21 +82,22 @@
 
 @media (max-width: 600px) {
   .calendar-container {
-    padding: 10px; /* 모바일에서 여백 줄이기 */
-    max-width: 80%; /* 모바일 화면 너비에 맞춤 */
-    width: 80%;
+    padding: 5px; /* 모바일에서 여백 더 줄이기 */
+    max-width: 90%; /* 모바일 화면에서 더 좁게 */
+    width: 100%;
   }
 
   .calendar-grid {
-    gap: 6px; /* 모바일에서 셀 간 간격 감소 */
-    max-width: 80%; /* 모바일에서 화면 너비에 맞춤 */
+    gap: 5px; /* 셀 간 간격 더 줄이기 */
+    max-width: 100%; /* 모바일에서 화면 너비에 맞춤 */
   }
 
   .calendar-day {
-    width: 48px; /* 모바일에서 셀 크기 조정 */
-    height: 48px;
-    font-size: 14px; /* 폰트 크기 조정 */
+    width: 40px; /* 모바일에서 셀 크기 더 작게 */
+    height: 40px;
+    font-size: 12px; /* 폰트 크기 더 작게 */
   }
+
 
   .month-title {
     font-size: 22px; /* 모바일에서 제목 크기 조정 */
