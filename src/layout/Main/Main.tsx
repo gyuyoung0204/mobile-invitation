@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import data from 'data.json';
-import mainImg from '@/assets/images/main.jpg';
+import mainImg from '@/assets/images/.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -46,8 +46,8 @@ const MainImgWrapper = styled.div`
   overflow: hidden;
 
   @media (max-width: 768px) {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
   }
 `;
 
