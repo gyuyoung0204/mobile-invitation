@@ -49,7 +49,6 @@ function App() {
     <NavermapsProvider ncpClientId={ncpClientId}>
       <FlowerFalling />
       <MainContainer>
-        
       <MainWrapper>
       <MusicPlayer />  
           <Main />
@@ -58,8 +57,7 @@ function App() {
       <Container>
         <Wrapper>
           <CustomHeading1>모시는 글</CustomHeading1>
-  <br /> {/* 헤딩과 내용 사이에 공백 추가 */}
-          
+  <br /> {/* 헤딩과 내용 사이에 공백 추가 */}          
           <Invitation />
         </Wrapper>
         <Wrapper>
