@@ -104,8 +104,8 @@
     }
   
     .copy-button {
-      padding: 10px 4px; /* 모바일에서 버튼 크기 확대 */
-      font-size: 1.0rem; /* 모바일에서 버튼 글자 크기 확대 */
+      padding: 6px 2px; /* 모바일에서 버튼 크기 축소 */
+      font-size: 0.9rem; /* 모바일에서 버튼 글자 크기 축소 */
     }
   
     .account-links {
