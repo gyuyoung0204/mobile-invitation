@@ -83,14 +83,12 @@ const Location = () => {
         <button 
           className="copy-button" 
           onClick={handleCopy} 
-          aria-label="주소 복사"
         >
           주소 복사
         </button>
         <button 
           className="map-button" 
           onClick={openPopup} 
-          aria-label="약도 보기"
         >
           약도 보기
         </button>

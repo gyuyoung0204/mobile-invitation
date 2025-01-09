@@ -48,6 +48,7 @@
     font-size: 14px;
     background: #fff;
     border-radius: 4px;
+    font-family: 'Times New Roman', serif; /* 폰트 변경 */
     border: 1px solid #dfdfdf;
     cursor: pointer;
     transition: background-color 0.3s ease;
