@@ -83,13 +83,13 @@
 @media (max-width: 600px) {
   .calendar-container {
     padding: 10px; /* 모바일에서 여백 줄이기 */
-    max-width: 90%; /* 모바일 화면 너비에 맞춤 */
-    width: 90%;
+    max-width: 80%; /* 모바일 화면 너비에 맞춤 */
+    width: 80%;
   }
 
   .calendar-grid {
     gap: 8px; /* 모바일에서 셀 간 간격 감소 */
-    max-width: 100%; /* 모바일에서 화면 너비에 맞춤 */
+    max-width: 80%; /* 모바일에서 화면 너비에 맞춤 */
   }
 
   .calendar-day {
