@@ -52,7 +52,6 @@ function App() {
         
       <MainWrapper>
       <MusicPlayer />  
-    
           <Main />
         </MainWrapper>
         </MainContainer>

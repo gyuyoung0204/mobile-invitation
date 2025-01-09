@@ -82,18 +82,23 @@ const CalendarWithDday = () => {
   };
 
   return (
-    <div className="calendar-container" data-aos="fade-up" data-aos-delay="0">
-      <div className="calendar">
-        <div
-          className="month-title"
-          data-aos="fade-down"
-          data-aos-delay="0"
-        >
-          {weddingDate.toLocaleString('ko-KR', { month: 'long', year: 'numeric' })}
+    <>
+     
+      {/* 캘린더 컨테이너 */}
+      <div className="calendar-container" data-aos="fade-up" data-aos-delay="0">
+        <div className="calendar">
+          <div
+            className="month-title"
+            data-aos="fade-down"
+            data-aos-delay="0"
+          >
+            {weddingDate.toLocaleString('ko-KR', { month: 'long', year: 'numeric' })}
+          </div>
+          <div className="calendar-grid">{generateCalendar()}</div>
         </div>
-        <div className="calendar-grid">{generateCalendar()}</div>
       </div>
-      <div
+       {/* 컨테이너 밖으로 D-Day 메시지 이동 */}
+       <div
         className="dday-message"
         data-aos="zoom-in"
         data-aos-delay="500"
@@ -104,7 +109,8 @@ const CalendarWithDday = () => {
         </span>{' '}
         일 전💍
       </div>
-    </div>
+    </>
+    
   );
 };
 
