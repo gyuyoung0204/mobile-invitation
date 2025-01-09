@@ -100,7 +100,7 @@
     }
   
     .details {
-      font-size: 0.9rem; /* 모바일에서 폰트 크기 더 확대 */
+      font-size: 1.0rem; /* 모바일에서 폰트 크기 더 확대 */
     }
   
     .copy-button {
