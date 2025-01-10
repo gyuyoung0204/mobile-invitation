@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import data from 'data.json';
 import mainImg from '@/assets/images/main.jpg';
+// import flowerImg from '@/assets/\icons/flower_image.png'; // flower.png 파일 import
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -20,8 +21,12 @@ const Main = () => {
         <MainImg src={mainImg} />
         <FadeOutGradient />
       </MainImgWrapper>
-      <MainTitle data-aos="fade-up" data-aos-delay="300"> {/* 300ms 지연 */}
-        {greeting.title}
+      {/* flower.png 이미지 추가 */}
+    {/*  <FlowerImg src={flowerImg} alt="Flower" data-aos="fade-up" data-aos-delay="200" /> */}
+      <MainTitle data-aos="fade-up" data-aos-delay="300">
+        {greeting.title.split("그리고")[0]}
+        <SmallWord>그리고</SmallWord>
+        {greeting.title.split("그리고")[1]}
       </MainTitle>
       <SubTitle data-aos="fade-up" data-aos-delay="600"> {/* 600ms 지연 */}
         {greeting.eventDetail}
@@ -51,7 +56,10 @@ const MainImgWrapper = styled.div`
     height: 100%;
   }
 `;
-
+const SmallWord = styled.span`
+  font-size: 1rem; /* 원하는 크기로 조정 */
+  color: #2F2120; /* 색상도 변경 가능 */
+`;
 const MainImg = styled.img`
   width: 100%;
   display: block;
@@ -81,6 +89,16 @@ const FadeOutGradient = styled.div`
   }
 `;
 
+const FlowerImg = styled.img`
+  width: 100px; /* 원하는 크기로 설정 */
+  height: auto;
+  margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    width: 80px; /* 작은 화면에서 크기 조정 */
+  }
+`;
+
 const MainTitle = styled.p`
   font-family: 'Times New Roman', serif;
   font-size: 2rem;
@@ -89,8 +107,6 @@ const MainTitle = styled.p`
   font-weight: bold;
   white-space: pre-line;
   margin-top: 20px;
-
- 
 `;
 
 const SubTitle = styled.p`
