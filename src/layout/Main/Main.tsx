@@ -57,7 +57,7 @@ const MainImgWrapper = styled.div`
   }
 `;
 const SmallWord = styled.span`
-  font-size: 1rem; /* 원하는 크기로 조정 */
+  font-size: 0.8rem; /* 원하는 크기로 조정 */
   color: #2F2120; /* 색상도 변경 가능 */
 `;
 const MainImg = styled.img`
