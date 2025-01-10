@@ -93,13 +93,13 @@ const images = [   /* 이미지 경로를 리스트로 저장 */
   },{
     alt: 'image13',
     source: image13,
-    width: 960,
-    height: 640
+    width: 640,
+    height: 960
   },{
     alt: 'image14',
     source: image14,
-    width: 640,
-    height: 960
+    width: 960,
+    height: 640
   },{
     alt: 'image15',
     source: image15,
@@ -128,13 +128,13 @@ const images = [   /* 이미지 경로를 리스트로 저장 */
   },{
     alt: 'image20',
     source: image20,
-    width: 960,
-    height: 640
+    width: 640,
+    height: 960
   },{
     alt: 'image21',
     source: image21,
-    width: 640,
-    height: 960
+    width: 960,
+    height: 640
   },{
     alt: 'image22',
     source: image22,
@@ -143,8 +143,8 @@ const images = [   /* 이미지 경로를 리스트로 저장 */
   },{
     alt: 'image23',
     source: image23,
-    width: 960,
-    height: 640
+    width: 640,
+    height: 960
   },{
     alt: 'image24',
     source: image24,
@@ -163,8 +163,8 @@ const images = [   /* 이미지 경로를 리스트로 저장 */
   },{
     alt: 'image27',
     source: image27,
-    width: 640,
-    height: 960
+    width: 960,
+    height: 640
   }
 ];
 
