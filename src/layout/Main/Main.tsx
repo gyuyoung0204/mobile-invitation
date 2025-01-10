@@ -56,9 +56,12 @@ const MainImgWrapper = styled.div`
     height: 100%;
   }
 `;
+
 const SmallWord = styled.span`
   font-size: 0.8rem; /* 원하는 크기로 조정 */
-  color: #2F2120; /* 색상도 변경 가능 */
+  color: #777; /* 색상도 변경 가능 */
+  font-weight: bold; /* 텍스트를 볼드 처리 */
+  
 `;
 const MainImg = styled.img`
   width: 100%;
