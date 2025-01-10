@@ -89,15 +89,15 @@ const FadeOutGradient = styled.div`
   }
 `;
 
-const FlowerImg = styled.img`
-  width: 100px; /* 원하는 크기로 설정 */
-  height: auto;
-  margin-bottom: 10px;
+// const FlowerImg = styled.img`
+//   width: 100px; /* 원하는 크기로 설정 */
+//   height: auto;
+//   margin-bottom: 10px;
 
-  @media (max-width: 768px) {
-    width: 80px; /* 작은 화면에서 크기 조정 */
-  }
-`;
+//   @media (max-width: 768px) {
+//     width: 80px; /* 작은 화면에서 크기 조정 */
+//   }
+// `;
 
 const MainTitle = styled.p`
   font-family: 'Times New Roman', serif;
