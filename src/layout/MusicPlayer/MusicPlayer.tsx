@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import './MusicPlayer.css';
-import Song from "@/assets/song.mp3";
+import Song from "@/assets/wedding_song.mp3";
 
 const MusicPlayer = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
