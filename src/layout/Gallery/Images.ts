@@ -20,11 +20,14 @@ import image19 from '@/assets/images/19.jpg'
 import image20 from '@/assets/images/20.jpg'
 import image21 from '@/assets/images/21.jpg'
 import image22 from '@/assets/images/22.jpg'
-// import image23 from '@/assets/images/23.jpg'
+ import image23 from '@/assets/images/23.jpg'
 import image24 from '@/assets/images/24.jpg'
 import image25 from '@/assets/images/25.jpg'
 import image26 from '@/assets/images/26.jpg'
 import image27 from '@/assets/images/27.jpg'
+import image28 from '@/assets/images/28.jpg'
+import image29 from '@/assets/images/29.jpg'
+import image30 from '@/assets/images/30.jpg'
 
 
 const images = [   /* 이미지 경로를 리스트로 저장 */
@@ -98,8 +101,8 @@ const images = [   /* 이미지 경로를 리스트로 저장 */
   },{
     alt: 'image14',
     source: image14,
-    width: 960,
-    height: 640
+    width: 640,
+    height: 960
   },{
     alt: 'image15',
     source: image15,
@@ -108,8 +111,8 @@ const images = [   /* 이미지 경로를 리스트로 저장 */
   },{
     alt: 'image16',
     source: image16,
-    width: 640,
-    height: 960
+    width: 960,
+    height: 640
   },{
     alt: 'image17',
     source: image17,
@@ -141,23 +144,43 @@ const images = [   /* 이미지 경로를 리스트로 저장 */
     width: 640,
     height: 960
   },{
+    alt: 'image23',
+    source: image23,
+    width: 640,
+    height: 960
+  },{
     alt: 'image24',
     source: image24,
-    width: 960,
-    height: 640
+    width: 640,
+    height: 960
   },{
     alt: 'image25',
     source: image25,
-    width: 960,
-    height: 640
+    width: 640,
+    height: 960
   },{
     alt: 'image26',
     source: image26,
-    width: 960,
-    height: 640
+    width: 640,
+    height: 960
   },{
     alt: 'image27',
     source: image27,
+    width: 960,
+    height: 640
+  },{
+    alt: 'image28',
+    source: image28,
+    width: 960,
+    height: 640
+  },{
+    alt: 'image29',
+    source: image29,
+    width: 960,
+    height: 640
+  },{
+    alt: 'image30',
+    source: image30,
     width: 960,
     height: 640
   }
