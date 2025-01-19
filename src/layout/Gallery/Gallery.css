@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 5px;
     background-color: transparent; /* 컨테이너 배경색 제거 */
     font-family: 'Times New Roman', serif; /* 폰트 변경 */
   }
