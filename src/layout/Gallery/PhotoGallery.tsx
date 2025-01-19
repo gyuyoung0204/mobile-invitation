@@ -8,8 +8,8 @@ const PhotoGallery = () => {
   const smallItemStyles: React.CSSProperties = {
     cursor: 'pointer', // 클릭 가능하도록 설정
     objectFit: 'cover', // 이미지 비율을 정사각형에 맞게 채움
-    width: isMobile ? '110px' : '160px', // 모바일: 120px, 데스크톱: 170px
-    height: isMobile ? '110px' : '160px', // 정사각형 크기 유지
+    width: isMobile ? '110px' : '150px', // 모바일: 120px, 데스크톱: 170px
+    height: isMobile ? '110px' : '150px', // 정사각형 크기 유지
     margin: 0, // 여백 약간 추가
   };
   
