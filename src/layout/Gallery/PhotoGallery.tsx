@@ -20,7 +20,7 @@ const PhotoGallery = () => {
       options={{
         zoom: false, // 확대 버튼 활성화
         wheelToZoom: false, // 마우스 휠로 확대 가능
-        clickToCloseNonZoomable: true, // 줌 불가능한 이미지 클릭 시 닫기
+        clickToCloseNonZoomable: true, // 줌 불가능한 이미지 클릭 시 닫기    
       }}
     >
       <div
@@ -39,6 +39,7 @@ const PhotoGallery = () => {
               thumbnail={image.source} // 작은 이미지
               width={image.width}
               height={image.height}
+             
             >
               {({ ref, open }) => (
                 <img
@@ -46,6 +47,7 @@ const PhotoGallery = () => {
                   alt={image.alt}
                   src={image.source}
                   ref={ref as React.MutableRefObject<HTMLImageElement>}
+                  
                   onClick={open} // 클릭하면 원본 이미지로 오픈
                 />
               )}
