@@ -22,7 +22,7 @@ const GalleryWrap = () => {
     <div className="contents-wrap" data-aos="fade-up" data-aos-delay="0">
       <div className={`image-more-wrap ${isMoreView ? 'is-more-view' : ''}`}>
         {!isMoreView && <div className="white-gradient-overlay" />}
-        <PhotoGallery zoomEnabled={false} />
+        <PhotoGallery />
       </div>
       {!isMoreView && (
         <div className="plus-button" onClick={onClickImageMoreViewButton}>
