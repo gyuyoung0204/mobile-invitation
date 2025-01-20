@@ -34,7 +34,7 @@ const PhotoGallery = () => {
           return (
             <Item
               key={index}
-              cropped={false} // 원본 비율 유지
+              cropped={true} // 원본 비율 유지
               original={image.source} // 클릭 시 표시할 원본 이미지
               thumbnail={image.source} // 작은 이미지
               width={image.width}
