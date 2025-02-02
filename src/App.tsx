@@ -81,11 +81,7 @@ function App() {
   <br /> {/* 헤딩과 내용 사이에 공백 추가 */}
           <Location />
         </Wrapper>
-        <Wrapper>
-          <CustomHeading1>신랑측 피로연 안내</CustomHeading1>
-  <br /> {/* 헤딩과 내용 사이에 공백 추가 */}
-          <Location_Sub />
-        </Wrapper>
+   
         <Wrapper>
           <CustomHeading1>신랑 신부에게</CustomHeading1>
   <br /> {/* 헤딩과 내용 사이에 공백 추가 */}
