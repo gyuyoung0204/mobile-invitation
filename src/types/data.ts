@@ -52,3 +52,4 @@ export interface ILocationInfo {
   title: string;
   desc: string;
 }
+
