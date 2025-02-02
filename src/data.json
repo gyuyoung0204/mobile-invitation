@@ -94,6 +94,14 @@
     "lat": 35.2339636,
     "lon":  128.6867225
   },
+  "mapInfo_sub": {
+    "address2": "경북 의성군 금성면 금성현서로 16 돼지촌 숯불갈비",
+    "time": "\n2025년 3월 29일 토요일 11:00",
+    "naverMap": "https://map.naver.com/p/entry/place/15895288?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=128.6845164&lat=36.2514770&c=15.00,0,0,0,dh",
+    "kakaoMap": "https://map.kakao.com/?urlX=878503&urlY=768165&urlLevel=3&itemId=8954272&q=%EB%8F%BC%EC%A7%80%EC%B4%8C%EC%88%AF%EB%B6%88%EA%B0%88%EB%B9%84&srcid=8954272&map_type=TYPE_MAP",
+    "lat": 36.251477,
+    "lon":  128.6845164
+  },
   "locationInfo": [
     {
       "title": "버스",
@@ -108,7 +116,6 @@
       "desc": "교총건물 자체 주차장과 경남도교육청 및 근처 관공서 무료주차 가능"
     }
   ],
-  
   "meeting": {
     "message": "안녕하세요! 결혼식에 초대합니다.",
     "eventDetail": "2025년 4월 12일 오후 12시20분",
