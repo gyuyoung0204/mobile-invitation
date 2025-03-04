@@ -13,13 +13,19 @@ AOS.init({
 
 const CalendarWithDday = () => {
   const weddingDate = new Date('2025-04-12'); // 결혼 날짜
+  weddingDate.setHours(0, 0, 0, 0); // 시/분/초 0으로 설정 (자정)
+//  const today = new Date('2025-03-04'); // 결혼 날짜
+  // 오늘 날짜를 한국 시간(KST) 기준으로 설정
   const today = new Date();
+  today.setHours(0, 0, 0, 0); // 시/분/초 0으로 설정 (자정)
   const [daysLeft, setDaysLeft] = useState(0);
 
   // 강조할 특정 날짜 (예: 빨간날)
   const holidays = ['2025-04-06', '2025-04-13', '2025-04-20', '2025-04-27']; // yyyy-MM-dd 형식
 
   useEffect(() => {
+    
+  
     const timeDiff = weddingDate.getTime() - today.getTime();
     const remainingDays = Math.ceil(timeDiff / (1000 * 60 * 60 * 24)); // 남은 일수 계산
     setDaysLeft(remainingDays);
