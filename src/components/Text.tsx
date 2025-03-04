@@ -26,17 +26,32 @@ export const PointTitle = styled.p`
 `;
 
 export const Paragraph = styled.p`
-  font-family: 'Times New Roman', serif; /* 동일한 클래식 폰트 */
-  line-height: 2.0rem; /* 줄 간격 조정 */;
-  color: #2F2120;
-  white-space: pre-line;
+font-family: 'Times New Roman', serif; /* 동일한 클래식 폰트 */
+font-size: 1.2rem; /* 기본 글자 크기 */
+line-height: 1.6; /* 줄 간격을 상대적으로 조정 */
+color: #2F2120;
+white-space: pre-line;
+word-break: keep-all; /* 단어가 잘리지 않도록 설정 */
+
+@media (max-width: 768px) {
+  font-size: 1rem; /* 모바일에서는 조금 줄임 */
+  line-height: 1.8; /* 모바일에서는 줄 간격을 더 넓힘 */
+}
 `;
+
 export const Paragraph_sub = styled.p`
-  font-family: 'Times New Roman', serif; /* 동일한 클래식 폰트 */
-  line-height: 2.5rem; /* 줄 간격 조정 */;
-  font-weight: bold; /* 문구 굵게 설정 */
-  color: #2F2120;
-  white-space: pre-line;
+font-family: 'Times New Roman', serif; /* 동일한 클래식 폰트 */
+font-size: 1.2rem; /* 기본 크기 */
+font-weight: bold; /* 문구 굵게 설정 */
+line-height: 1.6; /* 줄 간격 조정 */
+color: #2F2120;
+white-space: pre-line;
+word-break: keep-all;
+
+@media (max-width: 768px) {
+  font-size: 1rem; /* 모바일에서는 글자 크기를 줄임 */
+  line-height: 1.8; /* 모바일에서는 줄 간격을 더 넓힘 */
+}
 `;
 
 export const Caption = styled.p<{ textAlign?: string }>`
