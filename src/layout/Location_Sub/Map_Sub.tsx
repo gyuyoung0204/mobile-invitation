@@ -15,9 +15,9 @@ const Map_Sub = () => {
       <NaverMap
         defaultCenter={new navermaps.LatLng(lat, lon)}
         defaultZoom={17}
-        draggable={false} // 드래그 비활성화
-        pinchZoom={false} // 핀치 줌 비활성화
-        scrollWheel={false} // 스크롤 줌 비활성화
+        draggable={true} // 드래그 비활성화
+        pinchZoom={true} // 핀치 줌 비활성화
+        scrollWheel={true} // 스크롤 줌 비활성화
         keyboardShortcuts={false} // 키보드 단축키 비활성화
       >
         <Marker defaultPosition={new navermaps.LatLng(lat, lon)} />

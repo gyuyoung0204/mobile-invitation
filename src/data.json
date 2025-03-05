@@ -95,12 +95,12 @@
     "lon":  128.6867225
   },
   "mapInfo_sub": {
-    "address2": "경북 의성군 금성면 금성현서로 16 돼지촌 숯불갈비",
-    "time": "\n2025년 3월 29일 토요일 11:00",
-    "naverMap": "https://map.naver.com/p/entry/place/15895288?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=128.6845164&lat=36.2514770&c=15.00,0,0,0,dh",
-    "kakaoMap": "https://map.kakao.com/?urlX=878503&urlY=768165&urlLevel=3&itemId=8954272&q=%EB%8F%BC%EC%A7%80%EC%B4%8C%EC%88%AF%EB%B6%88%EA%B0%88%EB%B9%84&srcid=8954272&map_type=TYPE_MAP",
-    "lat": 36.251477,
-    "lon":  128.6845164
+    "address2": "경북 의성군 금성면 산운들길 104-24 (금성포도농원)",
+    "time": "\n 2025년 3월 29일 토요일 오전11시 ~ 오후 2시",
+    "naverMap": "https://map.naver.com/p/search/%EA%B8%88%EC%84%B1%EB%A9%B4%20%EC%82%B0%EC%9A%B4%EB%93%A4%EA%B8%B8%20104-24/address/14325517.8860875,4334557.1848804,%EA%B2%BD%EC%83%81%EB%B6%81%EB%8F%84%20%EC%9D%98%EC%84%B1%EA%B5%B0%20%EA%B8%88%EC%84%B1%EB%A9%B4%20%EC%82%B0%EC%9A%B4%EB%93%A4%EA%B8%B8%20104-24,new?c=15.00,0,0,0,dh&isCorrectAnswer=true",
+    "kakaoMap": "https://map.kakao.com/?map_type=TYPE_MAP&q=%EA%B2%BD%EB%B6%81+%EC%9D%98%EC%84%B1%EA%B5%B0+%EA%B8%88%EC%84%B1%EB%A9%B4+%EC%82%B0%EC%9A%B4%EB%93%A4%EA%B8%B8+104-24&urlLevel=2&urlX=879391&urlY=766725",
+    "lat": 36.246054,
+    "lon":  128.688549
   },
   "locationInfo": [
     {
