@@ -82,7 +82,7 @@ function App() {
           <Location_Sub />
         </Wrapper>
         <Wrapper>
-          <CustomHeading1>오시는 길</CustomHeading1>
+          <CustomHeading1>예식장 오시는 길</CustomHeading1>
   <br /> {/* 헤딩과 내용 사이에 공백 추가 */}
           <Location />
         </Wrapper>
