@@ -1,21 +1,72 @@
-.attendance-container {
+.attendance_overlay {
+    position: fixed; /* ✅ 브라우저 전체 화면 기준 */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     padding: 20px;
-    background-color: transparent; /* 컨테이너 배경색 제거 */
-    font-family: 'Times New Roman', serif; /* 폰트 변경 */
+    overflow-y: auto;
   }
   
+  .attendance_modal {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    border-radius: 16px;
+    padding: 24px 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    position: relative;
+    animation: fadeIn 0.25s ease;
+  }
   
-  @media (max-width: 768px) {
-    .attendance-container {
-     
-    width: 80vw; /* 모바일에서 지도 너비 가득 채우기 */
-    padding: 10px; /* 모바일에서 여백 최소화 */
+  .attendance_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .attendance_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .attendance_close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .attendance-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.05rem;
+    color: #4a4a4a;
+    line-height: 1.8;
+    background-color: #f9f6ff; /* 연한 보라 배경 */
+    border-left: 4px solid #9575cd; /* 보라색 포인트 바 */
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Nanum Myeongjo', serif; /* 감성 폰트 */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
     }
-  
-  
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
+
+  
   
