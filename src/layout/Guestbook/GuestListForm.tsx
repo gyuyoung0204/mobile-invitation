@@ -9,7 +9,6 @@ interface GuestbookMessage {
   message: string;
   date: string;
 }
-
 const GuestListForm = () => {
   const [messages, setMessages] = useState<GuestbookMessage[]>([]);
   const [loadedKeys, setLoadedKeys] = useState<Set<string>>(new Set()); // 이미 로드된 키 추적
@@ -32,9 +31,7 @@ const GuestListForm = () => {
           ];
 
           // 날짜 순으로 정렬
-          return newMessages.sort((a, b) =>
-            new Date(a.date).getTime() - new Date(b.date).getTime()
-          );
+          return newMessages.sort((b, a) => a.createdAt - b.createdAt);
         });
       }
     });
