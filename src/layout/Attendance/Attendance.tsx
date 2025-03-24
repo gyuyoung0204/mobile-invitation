@@ -16,6 +16,20 @@ AOS.init({
 const Attendance = () => {
   const [showFormModal, setShowFormModal] = useState(false);
   const [showViewerModal, setShowViewerModal] = useState(false);
+  const [showPasswordModal, setShowPasswordModal] = useState(false);
+  const [passwordInput, setPasswordInput] = useState('');
+  const [passwordError, setPasswordError] = useState('');
+
+  const handlePasswordSubmit = () => {
+    if (passwordInput === '0412') {
+      setShowViewerModal(true);
+      setShowPasswordModal(false);
+      setPasswordInput('');
+      setPasswordError('');
+    } else {
+      setPasswordError('비밀번호가 틀렸습니다.');
+    }
+  };
 
   return (
     <div className="attendance-container" data-aos="fade-up" data-aos-delay="0">
@@ -26,28 +40,51 @@ const Attendance = () => {
       </p>
 
       <div
-  style={{
-    textAlign: 'center',
-    margin: '40px 0',
-    display: 'flex',
-    flexDirection: 'row', // 👈 가로 정렬
-    gap: '10px',
-    justifyContent: 'center', // 버튼들을 가운데 정렬
-    flexWrap: 'wrap' // 모바일에서 두 줄로 떨어지도록
-  }}
-  data-aos="fade-up"
-  data-aos-delay="300"
->
-  <RoundButton onClick={() => setShowFormModal(true)}>
-    참석 정보 전달하기
-  </RoundButton>
-  <RoundButton onClick={() => setShowViewerModal(true)}>
-    참석자 목록 보기
-  </RoundButton>
-</div>
+        style={{
+          textAlign: 'center',
+          margin: '40px 0',
+          display: 'flex',
+          flexDirection: 'row',
+          gap: '10px',
+          justifyContent: 'center',
+          flexWrap: 'wrap',
+        }}
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <RoundButton onClick={() => setShowFormModal(true)}>참석 정보 전달하기</RoundButton>
+        <RoundButton onClick={() => setShowPasswordModal(true)}>참석자 목록 보기</RoundButton>
+      </div>
 
       {showFormModal && <AttendanceList onClose={() => setShowFormModal(false)} />}
       {showViewerModal && <AttendanceViewer onClose={() => setShowViewerModal(false)} />}
+
+      {showPasswordModal && (
+        <div className="password-modal">
+          <div className="password-modal-content">
+            <h3>비밀번호 입력</h3>
+            <input
+              type="password"
+              value={passwordInput}
+              onChange={(e) => setPasswordInput(e.target.value)}
+              placeholder="비밀번호를 입력하세요"
+            />
+            {passwordError && <p style={{ color: 'red', marginTop: '10px' }}>{passwordError}</p>}
+            <div style={{ marginTop: '20px', display: 'flex', gap: '10px', justifyContent: 'center' }}>
+              <button onClick={handlePasswordSubmit}>확인</button>
+              <button
+                onClick={() => {
+                  setShowPasswordModal(false);
+                  setPasswordInput('');
+                  setPasswordError('');
+                }}
+              >
+                취소
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
