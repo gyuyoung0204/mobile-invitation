@@ -1,0 +1,74 @@
+.attendance-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', serif; /* 폰트 변경 */
+}
+
+.attendance-label {
+  width: 100%;
+  font-weight: bold;
+  font-family: 'Times New Roman', serif; /* 폰트 변경 */
+}
+
+.text-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', serif; /* 폰트 변경 */
+}
+
+.textarea-input {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: none;
+  font-family: 'Times New Roman', serif; /* 폰트 변경 */
+}
+
+.button-group {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.toggle-button {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000000;
+  cursor: pointer;
+}
+
+.toggle-button.selected {
+    background-color: #9575cd; /* 기존: 검정색 -> 변경: 연보라 */
+    color: white;
+    font-weight: bold;
+    border: none; /* 테두리 없애고 싶으면 이 줄도 추가 */
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  background-color: white;
+  color: inherit;
+  cursor: pointer;
+}

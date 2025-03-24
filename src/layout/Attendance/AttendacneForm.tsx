@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import styled from '@emotion/styled';
 import { push, ref, serverTimestamp } from 'firebase/database';
 import { realtimeDb } from '../../firebase.ts';
-
+import './AttendanceForm.css';
 
 const attendanceRef = ref(realtimeDb, 'attendance');
 
@@ -40,120 +39,48 @@ const AttendanceForm = ({ onSubmit }: { onSubmit: () => void }) => {
   };
 
   return (
-    <FormWrapper onSubmit={handleSubmit} className="guestList-container">
-      <Label>분류</Label>
-      <ButtonGroup>
-        <ToggleButton type="button" selected={side === '신랑'} onClick={() => setSide('신랑')}>신랑 김동규측</ToggleButton>
-        <ToggleButton type="button" selected={side === '신부'} onClick={() => setSide('신부')}>신부 황주영측</ToggleButton>
-      </ButtonGroup>
+    <form onSubmit={handleSubmit} className="attendance-form">
+      <label className="attendance-label">분류</label>
+      <div className="button-group">
+        <button type="button" className={`toggle-button ${side === '신랑' ? 'selected' : ''}`} onClick={() => setSide('신랑')}>신랑 김동규측</button>
+        <button type="button" className={`toggle-button ${side === '신부' ? 'selected' : ''}`} onClick={() => setSide('신부')}>신부 황주영측</button>
+      </div>
 
-      <Label>참석 여부</Label>
-      <ButtonGroup>
-        <ToggleButton type="button" selected={status === '참석'} onClick={() => setStatus('참석')}>참석</ToggleButton>
-        <ToggleButton type="button" selected={status === '불참'} onClick={() => setStatus('불참')}>불참</ToggleButton>
-      </ButtonGroup>
+      <label className="attendance-label">참석 여부</label>
+      <div className="button-group">
+        <button type="button" className={`toggle-button ${status === '참석' ? 'selected' : ''}`} onClick={() => setStatus('참석')}>참석</button>
+        <button type="button" className={`toggle-button ${status === '불참' ? 'selected' : ''}`} onClick={() => setStatus('불참')}>불참</button>
+      </div>
 
-      <Label>성함</Label>
-      <NameInput value={name} onChange={(e) => setName(e.target.value)} placeholder="성함을 입력해주세요" />
+      <label className="attendance-label">성함</label>
+      <input className="text-input" value={name} onChange={(e) => setName(e.target.value)} placeholder="성함을 입력해주세요" />
 
-      <Label>동행 인원 (본인 제외)</Label>
-      <Select value={guestCount} onChange={(e) => setGuestCount(Number(e.target.value))}>
+      <label className="attendance-label">동행 인원 (본인 제외)</label>
+      <select className="text-input" value={guestCount} onChange={(e) => setGuestCount(Number(e.target.value))}>
         {Array.from({ length: 11 }, (_, i) => (
           <option key={i} value={i}>{i === 0 ? '없음' : `${i}명`}</option>
         ))}
-      </Select>
+      </select>
 
-      <Label>식사 여부</Label>
-      <ButtonGroup>
-        <ToggleButton type="button" selected={meal === '식사'} onClick={() => setMeal('식사')}>식사</ToggleButton>
-        <ToggleButton type="button" selected={meal === '답례품'} onClick={() => setMeal('답례품')}>답례품</ToggleButton>
-        <ToggleButton type="button" selected={meal === '미확정'} onClick={() => setMeal('미확정')}>미확정</ToggleButton>
-      </ButtonGroup>
+      <label className="attendance-label">식사 여부</label>
+      <div className="button-group">
+        <button type="button" className={`toggle-button ${meal === '식사' ? 'selected' : ''}`} onClick={() => setMeal('식사')}>식사</button>
+        <button type="button" className={`toggle-button ${meal === '답례품' ? 'selected' : ''}`} onClick={() => setMeal('답례품')}>답례품</button>
+        <button type="button" className={`toggle-button ${meal === '미확정' ? 'selected' : ''}`} onClick={() => setMeal('미확정')}>미확정</button>
+      </div>
 
-      <Label>전달사항</Label>
-      <MessageInput
+      <label className="attendance-label">전달사항</label>
+      <textarea
+        className="textarea-input"
         placeholder="전달사항을 입력해주세요 (최대 25자)"
         value={note}
         onChange={(e) => setNote(e.target.value)}
         maxLength={25}
       />
 
-      <SubmitButton type="submit">참석 정보 전달하기</SubmitButton>
-    </FormWrapper>
+      <button type="submit" className="submit-button">참석 정보 전달하기</button>
+    </form>
   );
 };
 
 export default AttendanceForm;
-
-const FormWrapper = styled.form`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  box-sizing: border-box;
-`;
-
-const Label = styled.label`
-  width: 100%;
-  font-weight: bold;
-`;
-
-const NameInput = styled.input`
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-`;
-
-const Select = styled.select`
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-`;
-
-const MessageInput = styled.textarea`
-  width: 100%;
-  height: 120px;
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  resize: none;
-`;
-
-const ButtonGroup = styled.div`
-  display: flex;
-  width: 100%;
-  gap: 10px;
-`;
-
-const ToggleButton = styled.button<{ selected: boolean }>`
-  flex: 1;
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background-color: ${({ selected }) => (selected ? '#000' : '#fff')};
-  color: ${({ selected }) => (selected ? '#fff' : '#000')};
-  cursor: pointer;
-`;
-
-const SubmitButton = styled.button`
-  width: 100%;
-  padding: 12px;
-  font-size: 1rem;
-  border-radius: 4px;
-  border: 1px solid lightgray;
-  background-color: white;
-  color: inherit;
-  cursor: pointer;
-`;

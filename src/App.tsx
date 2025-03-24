@@ -88,7 +88,11 @@ function App() {
           <Location />
         </Wrapper>
 
-  
+        <Wrapper>
+  <CustomHeading1>참석 정보</CustomHeading1>
+  <br />
+  <Attendance />  {/* ✅ 여기 삽입 */}
+</Wrapper>
 
      
         <Wrapper>
