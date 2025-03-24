@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import AttendanceList from './AttendanceList';
 import AttendanceViewer from './AttendanceViewer';
-import { Heading2 } from '@/components/Text.tsx';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import './Attendance.css';
