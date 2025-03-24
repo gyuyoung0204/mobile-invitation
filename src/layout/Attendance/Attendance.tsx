@@ -61,18 +61,64 @@ const Attendance = () => {
 
       {showPasswordModal && (
         <div className="password-modal">
-          <div className="password-modal-content">
-            <h3>비밀번호 입력</h3>
+          <div
+            className="password-modal-content"
+            style={{
+              background: 'white',
+              padding: '40px 30px',
+              borderRadius: '16px',
+              width: '90%',
+              maxWidth: '500px',
+              boxShadow: '0 0 20px rgba(0, 0, 0, 0.2)',
+              textAlign: 'center',
+            }}
+          >
+            <h3 style={{ marginBottom: '20px', fontSize: '1.5rem' }}>비밀번호 입력</h3>
             <input
-              type="password"
-              value={passwordInput}
-              onChange={(e) => setPasswordInput(e.target.value)}
-              placeholder="비밀번호를 입력하세요"
-            />
-            {passwordError && <p style={{ color: 'red', marginTop: '10px' }}>{passwordError}</p>}
-            <div style={{ marginTop: '20px', display: 'flex', gap: '10px', justifyContent: 'center' }}>
-              <button onClick={handlePasswordSubmit}>확인</button>
+  type="password"
+  value={passwordInput}
+  onChange={(e) => setPasswordInput(e.target.value)}
+  placeholder="비밀번호를 입력하세요"
+  style={{
+    width: '100%',
+    padding: '12px',
+    fontSize: '16px',
+    border: '1px solid #ccc',
+    borderRadius: '8px',
+    boxSizing: 'border-box', // ✅ 중요
+  }}
+/>
+            {passwordError && (
+              <p style={{ color: 'red', marginTop: '10px' }}>{passwordError}</p>
+            )}
+            <div
+              style={{
+                marginTop: '20px',
+                display: 'flex',
+                gap: '10px',
+                justifyContent: 'center',
+              }}
+            >
               <button
+                style={{
+                  padding: '10px 20px',
+                  fontSize: '16px',
+                  borderRadius: '8px',
+                  minWidth: '80px',
+                  cursor: 'pointer',
+                }}
+                onClick={handlePasswordSubmit}
+              >
+                확인
+              </button>
+              <button
+                style={{
+                  padding: '10px 20px',
+                  fontSize: '16px',
+                  borderRadius: '8px',
+                  minWidth: '80px',
+                  cursor: 'pointer',
+                }}
                 onClick={() => {
                   setShowPasswordModal(false);
                   setPasswordInput('');
