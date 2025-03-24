@@ -11,6 +11,7 @@
     align-items: center;
     padding: 20px;
     overflow-y: auto;
+    font-family: 'Times New Roman', serif; /* 폰트 변경 */
   }
   
   .attendance_modal {
@@ -22,6 +23,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     position: relative;
     animation: fadeIn 0.25s ease;
+    font-family: 'Times New Roman', serif; /* 폰트 변경 */
   }
   
   .attendance_header {
@@ -54,7 +56,7 @@
     padding: 16px 20px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    font-family: 'Nanum Myeongjo', serif; /* 감성 폰트 */
+    font-family: 'Times New Roman', serif; /* 폰트 변경 */
   }
   
   @keyframes fadeIn {
@@ -67,26 +69,57 @@
       transform: scale(1);
     }
   }
-
   .password-modal {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: center;
     align-items: center;
-    z-index: 999;
+    justify-content: center;
+    z-index: 1000;
+    font-family: 'Times New Roman', serif; /* 폰트 변경 */
   }
   
   .password-modal-content {
     background: white;
-    padding: 30px;
-    border-radius: 10px;
+    padding: 40px 30px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 400px; /* 기존보다 더 큼 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     text-align: center;
+    font-family: 'Times New Roman', serif; /* 폰트 변경 */
+  }
+  
+  .password-modal-content h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', serif; /* 폰트 변경 */
+  }
+  
+  .password-modal-content input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Times New Roman', serif; /* 폰트 변경 */
   }
 
+  .modal-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    min-width: 100px;
+    cursor: pointer;
+    border: none;
+    background-color: #f0f0f0;
+    transition: background-color 0.2s;
+  }
   
-  
+  .modal-button:hover {
+    background-color: #ddd;
+  }
