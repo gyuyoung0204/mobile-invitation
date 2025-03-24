@@ -18,6 +18,7 @@ import FlowerFalling from '@/layout/FlowerFalling/FlowerFalling.tsx';
 import CalendarWithDday from '@/layout/CalendarWithDday/CalendarWithDday.tsx';
 import GuestList from './layout/Guestbook/GuestList';
 import Location_Sub from './layout/Location_Sub/Location_Sub';
+import Attendance from '@/layout/Attendance/Attendance'; // 추가
 
 
 function App() {
@@ -86,6 +87,9 @@ function App() {
   <br /> {/* 헤딩과 내용 사이에 공백 추가 */}
           <Location />
         </Wrapper>
+
+  
+
      
         <Wrapper>
           <CustomHeading1>신랑 신부에게</CustomHeading1>
