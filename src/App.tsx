@@ -17,7 +17,6 @@ import FlowerFalling from '@/layout/FlowerFalling/FlowerFalling.tsx';
  import MusicPlayer from '@/layout/MusicPlayer/MusicPlayer.tsx';
 import CalendarWithDday from '@/layout/CalendarWithDday/CalendarWithDday.tsx';
 import GuestList from './layout/Guestbook/GuestList';
-import Location_Sub from './layout/Location_Sub/Location_Sub';
 import Attendance from '@/layout/Attendance/Attendance'; // 추가
 
 
